@@ -1,0 +1,234 @@
+:root {
+    --availability-bg: #0a0a0a;
+    --availability-border: #1f1f1f;
+    --availability-glow: rgba(0, 255, 174, 0.2);
+
+    --ping-color: #00ffae;
+    --ping-pulse: rgba(0, 255, 174, 0.4);
+
+    --hero-caret-color: #ffffff;
+
+    --hero-title-gradient-primary: linear-gradient(
+        90deg,
+        #fc466b,
+        #3f5efb,
+        #30cfd0,
+        #330867,
+        #ffcc70
+    );
+    --hero-title-gradient-secondary: linear-gradient(
+        90deg,
+        #f12711,
+        #f5af19,
+        #00b09b,
+        #96c93d,
+        #2980b9,
+        #8e44ad
+    );
+
+    --hero-button-border-color: #151515;
+    --hero-button-text: #151515;
+    --hero-button-fill: #ffff00;
+    --hero-button-fill-text: #151515;
+}
+
+body.dark {
+    --availability-bg: #1a1a1a;
+    --availability-border: #333;
+    --availability-glow: rgba(0, 255, 174, 0.4);
+
+    --ping-color: #00ffae;
+    --ping-pulse: rgba(0, 255, 174, 0.4);
+
+    --hero-caret-color: #ffffff;
+
+    --hero-title-gradient-primary: linear-gradient(
+        90deg,
+        #fc466b,
+        #3f5efb,
+        #30cfd0,
+        #330867,
+        #ffcc70
+    );
+    --hero-title-gradient-secondary: linear-gradient(
+        90deg,
+        #f12711,
+        #f5af19,
+        #00b09b,
+        #96c93d,
+        #2980b9,
+        #8e44ad
+    );
+
+    --hero-button-border-color: #ffff00;
+    --hero-button-text: white;
+    --hero-button-fill: #ffff00;
+    --hero-button-fill-text: #151515;
+}
+
+.availability-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: white;
+    background-color: var(--availability-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-weight: 500;
+    border: 1px solid var(--availability-border);
+    box-shadow: 0 0 10px var(--availability-glow);
+    margin: 1rem auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.ping-dot {
+    width: 10px;
+    height: 10px;
+    background-color: var(--ping-color);
+    border-radius: 999px;
+    position: relative;
+}
+
+.ping-dot::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    background: var(--ping-pulse);
+    animation: ping 1.5s infinite ease-in-out;
+}
+
+@keyframes ping {
+    0% {
+        transform: scale(0.6);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    min-height: 68vh;
+}
+
+.hero-content h1 span {
+    border-right: 2px solid var(--hero-caret-color);
+    padding-right: 2px;
+    display: inline-block;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.hero-content h1:first-of-type {
+    font-size: 40px;
+    font-weight: 700;
+    background: var(--hero-title-gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content h1 {
+    background: var(--hero-title-gradient-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.hero-content {
+    max-width: 40%;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.join-button,
+.contact-link {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    min-width: 15vmin;
+    padding: 0.75rem 2rem;
+    border-radius: 0.3rem;
+    border: 1px solid var(--hero-button-border-color);
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.contact-link {
+    background-color: transparent;
+    color: var(--hero-button-text);
+}
+
+.join-button {
+    background-color: var(--hero-button-fill);
+    color: var(--hero-button-fill-text);
+}
+
+.join-button:hover,
+.contact-link:hover {
+    transform: scale(1.05);
+}
+
+.hero-image {
+    max-width: 25%;
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.05);
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 950px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content,
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-image {
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,140 @@
+:root {
+    --theme-ribbon-top-bg-color: #f20063;
+    --theme-ribbon-bottom-bg-color: #e40050;
+    --theme-footer-text-color: #151515;
+    --theme-footer-icon-color: #151515;
+    --theme-footer-icon-border-color: #151515;
+    --theme-footer-border-color: #151515;
+    --theme-pulse-color: #e40050;
+}
+
+body.dark {
+    --theme-footer-text-color: white;
+    --theme-footer-icon-color: white;
+    --theme-footer-icon-border-color: white;
+    --theme-footer-border-color: white;
+    --theme-pulse-color: #f20063;
+}
+
+.footer {
+    padding: 2rem 10% 1rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-ribbon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 220px;
+}
+
+.ribbon-top,
+.ribbon-bottom {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    transform: rotate(-5deg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
+}
+
+.ribbon-top {
+    background-color: var(--theme-ribbon-top-bg-color);
+}
+
+.ribbon-bottom {
+    background-color: var(--theme-ribbon-bottom-bg-color);
+    margin-left: 2rem;
+}
+
+.footer-find-text {
+    font-size: 1.2rem;
+    color: var(--theme-footer-text-color);
+    margin-bottom: 1rem;
+    text-align: left;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.footer-icons {
+    padding-top: 2rem;
+}
+
+.icon-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-icon {
+    font-size: 4vmin;
+    color: var(--theme-footer-icon-color);
+    padding: 0.7rem;
+    border: 2px solid var(--theme-footer-icon-border-color);
+    border-radius: 50%;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    animation: sequentialPulse 4s infinite;
+}
+
+.footer-border {
+    margin: 2rem auto;
+    border-top: 2px solid var(--theme-footer-border-color);
+}
+
+.footer-text {
+    font-size: 1rem;
+    padding-top: 3vmin;
+    color: var(--theme-footer-text-color);
+}
+
+@media (max-width: 1000px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .ribbon-top,
+    .ribbon-bottom {
+        font-size: 1rem;
+    }
+}
+
+@keyframes sequentialPulse {
+    0%,
+    100%,
+    33.33%,
+    66.66% {
+        border-color: var(--theme-footer-icon-border-color);
+        color: var(--theme-footer-icon-color);
+        box-shadow: none;
+    }
+    20% {
+        border-color: var(--theme-pulse-color);
+        color: var(--theme-pulse-color);
+        box-shadow: 0 0 10px var(--theme-pulse-color);
+    }
+}
+
+.footer-icon.fa-linkedin {
+    animation-delay: 0s;
+}
+
+.footer-icon.fa-github {
+    animation-delay: 1s;
+}
+
+.footer-icon.fa-envelope {
+    animation-delay: 2s;
+}
+
+.footer-icon.fa-user {
+    animation-delay: 3s;
+}

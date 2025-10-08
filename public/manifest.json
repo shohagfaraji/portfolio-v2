@@ -1,0 +1,15 @@
+{
+    "short_name": "My Portfolio",
+    "name": "Portfolio of Shohag Faraji, Aspiring Software Engineer & Competitive Programmer",
+    "icons": [
+        {
+            "src": "",
+            "sizes": "",
+            "type": ""
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#4e90ff",
+    "background_color": "#0a0a0a"
+}
