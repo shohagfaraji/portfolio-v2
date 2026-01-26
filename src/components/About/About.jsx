@@ -21,12 +21,13 @@ const AboutMe = () => {
                         <b style={{ color: "#4a90e2", fontSize: "1.2em" }}>
                             Shohag
                         </b>
-                        . I am a Competitive Programmer and a Computer Science
-                        student. Pupil at Codeforces . Participated in over 6
-                        Inter-University Programming Contests (IUPCs). I also
-                        conduct competitive programming classes for juniors at
-                        my university. Passionate about solving problems through
-                        code and building impactful software solutions.
+                        . I am a competitive programmer and a computer science
+                        graduate. I am a Pupil on Codeforces and have
+                        participated in over 8 Inter-University Programming
+                        Contests (IUPCs) as well as ICPC. I also conduct
+                        competitive programming classes for juniors at my
+                        university. I am passionate about solving problems
+                        through code and building impactful software solutions.
                     </p>
                 </motion.div>
                 <motion.div

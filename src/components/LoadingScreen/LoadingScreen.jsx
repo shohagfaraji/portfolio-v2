@@ -1,22 +1,22 @@
 import { motion } from "framer-motion";
 import "./LoadingScreen.css";
-const load = "https://i.postimg.cc/MZ3r7YsM/loading.gif";
 
 const LoadingScreen = () => {
     return (
         <div className="loading-container">
-            <motion.img
-                src={load}
-                alt="Logo"
-                className="loading-logo"
-                initial={{ scale: 1.5 }}
-                animate={{ scale: [1.5, 1.5, 1.5] }}
+            <motion.div
+                className="orbit"
+                animate={{ rotate: 360 }}
                 transition={{
-                    duration: 1.5,
-                    ease: "easeInOut",
                     repeat: Infinity,
+                    duration: 0.5,
+                    ease: "linear",
                 }}
-            />
+            >
+                <span className="dot dot-1" />
+                <span className="dot dot-2" />
+                <span className="dot dot-3" />
+            </motion.div>
         </div>
     );
 };

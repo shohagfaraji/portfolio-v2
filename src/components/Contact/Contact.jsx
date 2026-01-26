@@ -48,11 +48,11 @@ const Contact = () => {
                 <div className="footer-border">
                     <p className="footer-text">
                         <a
-                            href="https://shohagfaraji.netlify.app/"
+                            href="https://sh0hag.netlify.app/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Portfolio v0.0
+                            Portfolio v1.0
                         </a>{" "}
                         &copy; {currentYear} Shohag Faraji. All rights reserved.
                     </p>

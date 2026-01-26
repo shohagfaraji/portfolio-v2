@@ -1,25 +1,25 @@
 import React, { useState, useEffect } from "react";
 import "./Hero.css";
 import { motion } from "framer-motion";
-import TechGlobe from "../TechGlobe/TechGlobe";
+import TechGlobe from "../TechGlobe/TechGlobe.jsx";
 
 const TypingEffect = ({ text, speed, loop }) => {
     const [displayedText, setDisplayedText] = useState("");
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
-        let timeout;
+        // let timeout;
         const typeText = () => {
             if (index < text.length) {
                 setDisplayedText((prev) => prev + text[index]);
                 setIndex((prevIndex) => prevIndex + 1);
             } else {
-                if (loop) {
-                    timeout = setTimeout(() => {
-                        setDisplayedText("");
-                        setIndex(0);
-                    }, 2000);
-                }
+                // if (loop) {
+                //     timeout = setTimeout(() => {
+                //         setDisplayedText("");
+                //         setIndex(0);
+                //     }, 2000);
+                // }
             }
         };
 
@@ -45,7 +45,7 @@ const HeroSection = () => {
                     }
                 });
             },
-            { threshold: 0.3 }
+            { threshold: 0.3 },
         );
 
         const heroSection = document.querySelector(".hero-section");
@@ -101,7 +101,7 @@ const HeroSection = () => {
                         animate={{ opacity: isInView ? 1 : 0 }}
                         transition={{ duration: 1.5 }}
                     >
-                        Solved over 2000 problems on Codeforces (Pupil).
+                        Solved over 2200 problems on Codeforces (Pupil).
                         Interested in Building and Exploring Technology
                     </motion.p>
 
@@ -112,7 +112,7 @@ const HeroSection = () => {
                         transition={{ duration: 1.7 }}
                     >
                         <a
-                            href=""
+                            href="https://drive.google.com/drive/folders/1tyc-BUoseWXr5AbAJv8skPZkHeJI7WJm?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="join-button shine-button"
