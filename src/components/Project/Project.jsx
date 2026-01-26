@@ -1,6 +1,6 @@
 import React from "react";
 import "./Project.css";
-import Projectitem from "./Projectitem";
+import Projectitem from "./Projectitem.jsx";
 import { PROJECTS_IMAGES } from "../../assets/projects";
 
 const Project = () => {
@@ -15,6 +15,17 @@ const Project = () => {
                 "Python | OpenCV | Deep Learning | YOLOv8 | YOLOv11 | Pose Estimation",
             image: PROJECTS_IMAGES.thesis_1,
             projectType: "Thesis",
+        },
+        {
+            sourceCodeLink: "",
+            deployedLink: "",
+            name: "Full-Stack E-Commerce Web Application",
+            description:
+                "A full-stack e-commerce web application built as a learning project using Django and React. The application features user authentication, product management, shopping cart functionality, and order processing, backed by a PostgreSQL database (managed via pgAdmin 4) and a responsive UI built with Tailwind CSS.",
+            languages:
+                "Python | Django | React | Tailwind CSS | PostgreSQL | pgAdmin 4 | REST APIs",
+            image: PROJECTS_IMAGES.ecommerce_django_react,
+            projectType: "Learning Project",
         },
         {
             sourceCodeLink: "https://github.com/shohagfaraji/react-text-tool",
@@ -36,20 +47,20 @@ const Project = () => {
                 "A collection of creative graphics programs developed as part of the Computer Graphics Lab course. The project includes custom-designed scenes such as the National Martyrs' Monument and other illustrative diagrams. Implemented using core graphics concepts including transformations, drawing algorithms, and user interaction, with a final project showcasing advanced rendering and scene composition.",
             languages: "C++ | OpenGL | Glut | Data Structures | Algorithms",
             image: PROJECTS_IMAGES.national_martyrs_monument,
-            projectType: "",
+            projectType: "Personal Project",
         },
         {
             sourceCodeLink:
                 "https://github.com/shohagfaraji/dlsd-lab-final-project",
             deployedLink:
                 "https://github.com/shohagfaraji/dlsd-lab-final-project/tree/main/videos",
-            name: "CSE 426: Computer Graphics Lab",
+            name: "Winner - DLSD Lab Final Project",
             description:
-                "A collection of creative graphics programs developed as part of the Computer Graphics Lab course. The project includes custom-designed scenes such as the National Martyrs' Monument and other illustrative diagrams. Implemented using core graphics concepts including transformations, drawing algorithms, and user interaction, with a final project showcasing advanced rendering and scene composition.",
+                "This project demonstrates a simple yet effective 4-way traffic light system designed using digital logic ICs, primarily the 74HC4017 Johnson Decade Counter and a 555 timer in astable mode. It cycles through standard traffic light sequences for four directions, simulating a real-world traffic intersection.",
             languages:
                 "Johnson Counter | 555 timer | LEDs | Resistors | Capacitors | Potentiometer | Breadboard | DC/battery input",
             image: PROJECTS_IMAGES.traffic_system,
-            projectType: "",
+            projectType: "Academic Project",
         },
     ];
 

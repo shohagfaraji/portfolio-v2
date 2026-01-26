@@ -1,11 +1,11 @@
 :root {
     --loading-bg-color: #ffffff;
-    --loading-logo-shadow: rgba(0, 0, 0, 0.5);
+    --dot-color: #0dcaf0;
 }
 
 body.dark {
     --loading-bg-color: #151515;
-    --loading-logo-shadow: rgba(13, 202, 240, 0.8);
+    --dot-color: #0dcaf0;
 }
 
 .loading-container {
@@ -18,11 +18,35 @@ body.dark {
     z-index: 9999;
 }
 
-.loading-logo {
-    height: 60px;
-    width: 60px;
+.orbit {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    will-change: transform;
+}
+
+
+.dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: var(--dot-color);
     border-radius: 50%;
-    object-fit: fill;
-    cursor: pointer;
-    box-shadow: 0 2px 10px var(--loading-logo-shadow);
+    box-shadow: 0 0 10px var(--dot-color);
+}
+
+.dot-1 {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot-2 {
+    bottom: 10px;
+    left: 5px;
+}
+
+.dot-3 {
+    bottom: 10px;
+    right: 5px;
 }

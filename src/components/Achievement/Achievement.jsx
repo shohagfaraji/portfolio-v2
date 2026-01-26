@@ -44,7 +44,7 @@ const achievementsData = [
     {
         text: (
             <>
-                Solved <span className="highlight2">2000+ Problems</span> on top
+                Solved <span className="highlight2">2200+ Problems</span> on top
                 platforms,{" "}
                 <span className="highlight2">
                     Participated in 200+ Virtual Contests
@@ -91,7 +91,7 @@ const achievementsData = [
             <>
                 Participated in multiple{" "}
                 <span className="highlight2">IUPCs</span> with a remarkable
-                performance in BUET, KUET, DUET, AUST, UIU, UU.
+                performance in BUET, KUET, CUET, DUET, AUST, UIU, MU, NWU, UU.
             </>
         ),
         link: "",

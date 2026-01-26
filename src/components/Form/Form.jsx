@@ -26,12 +26,12 @@ const Form = () => {
         setButtonBlock(true);
 
         try {
-            const result = await emailjs.send(
-                "service_lwd4z2k",
-                "template_9s610sh",
-                formData,
-                "yhe7iUd8gmUgVzmh6"
-            );
+            // const result = await emailjs.send(
+            //     "service_lwd4z2k",
+            //     "template_9s610sh",
+            //     formData,
+            //     "yhe7iUd8gmUgVzmh6"
+            // );
             alert("Message sent successfully!");
             setFormData({
                 user_name: "",
