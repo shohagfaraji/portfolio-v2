@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import { motion } from "framer-motion";
-const shohag = "https://i.postimg.cc/tgtVb211/shohag.jpg";
+import shohagWebp from "../../assets/shohag.webp";
 
 const AboutMe = () => {
     return (
@@ -43,7 +43,7 @@ const AboutMe = () => {
                     }}
                 >
                     <motion.img
-                        src={shohag}
+                        src={shohagWebp}
                         alt="Profile"
                         draggable="false"
                         whileHover={{ scale: 1.03 }}

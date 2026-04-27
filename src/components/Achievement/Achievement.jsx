@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./Achievement.css";
+// import { PROJECTS_IMAGES } from "../../assets/projects";
+import icpc from "../../assets/contests/icpc-1.webp";
+import buet from "../../assets/contests/buet-1.webp";
+import kuet from "../../assets/contests/kuet-2.webp";
+import cuet from "../../assets/contests/cuet-1.webp";
+import duet from "../../assets/contests/duet-1.webp";
+import uiu from "../../assets/contests/uiu-2.webp";
+import aust from "../../assets/contests/aust-1.webp";
+import uu from "../../assets/contests/uu-1.webp";
+import mu from "../../assets/contests/mu-1.webp";
+import nwu from "../../assets/contests/nwu-1.webp";
 
 const achievementsData = [
     {
@@ -72,7 +83,7 @@ const achievementsData = [
             <>
                 Received the{" "}
                 <span className="highlight2">Dean's Honour Award </span> x3
-                times for academic excellence.{" "}
+                times for academic excellence.
             </>
         ),
         link: "",
@@ -86,41 +97,48 @@ const achievementsData = [
         ),
         link: "",
     },
+];
+
+const contestData = [
     {
-        text: (
-            <>
-                Participated in multiple{" "}
-                <span className="highlight2">IUPCs</span> with a remarkable
-                performance in BUET, KUET, CUET, DUET, AUST, UIU, MU, NWU, UU.
-            </>
-        ),
-        link: "",
+        title: "ICPC | ASIA DHAKA REGIONAL CONTEST 2025",
+        image: icpc,
     },
     {
-        text: (
-            <>
-                <span className="highlight2">
-                    ICPC - Jamilur Reza Choudhury Scholarship:
-                </span>{" "}
-                I have achieved the JRC Scholarship
-                <span className="highlight1"> x6 Times</span> for excellence in
-                Competitive Programming
-            </>
-        ),
-        link: "",
+        title: "United Group Presents BUET CSE Fest 2024",
+        image: buet,
     },
     {
-        text: (
-            <>
-                Achieved the top position{" "}
-                <span className="highlight1">
-                    (1<sup>st</sup> place)
-                </span>{" "}
-                in Bangladesh based on my consistent daily code streak in
-                Stopstalk.
-            </>
-        ),
-        link: "",
+        title: "MIAKI PRESENTS KUET IUPC 2025",
+        image: kuet,
+    },
+    {
+        title: "CUET CSE Fest 2025",
+        image: cuet,
+    },
+    {
+        title: "Betopia Group Presents DUET IUPC 2025",
+        image: duet,
+    },
+    {
+        title: "UIU Inter-University Programming Contest 2025",
+        image: uiu,
+    },
+    {
+        title: "MTB Presents AUST Inter University Programming Contest 2025",
+        image: aust,
+    },
+    {
+        title: "Hi-Fi Computer  Presents MU CSE Fest 2025",
+        image: mu,
+    },
+    {
+        title: "Uttara University Inter-University Programming Contest 2025",
+        image: uu,
+    },
+    {
+        title: "NWU CSE Fest 2025",
+        image: nwu,
     },
 ];
 
@@ -134,12 +152,14 @@ const itemVariants = {
 };
 
 const Achievements = () => {
+    const [selectedImage, setSelectedImage] = useState(null);
+
     return (
         <div id="Achievement" className="achievements-section">
             <motion.h2
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
+                transition={{ duration: 0.8 }}
             >
                 <i className="fa-solid fa-medal section-icon"></i> Achievements
             </motion.h2>
@@ -155,20 +175,63 @@ const Achievements = () => {
                         viewport={{ amount: 0.2 }}
                     >
                         <i className="fa-solid fa-award achievement-icon"></i>
+
                         <p className="achievement-text">
                             {achievement.text}{" "}
-                            <a
-                                href={achievement.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="achievement-link"
-                            >
-                                [Link]
-                            </a>
+                            {achievement.link && (
+                                <a
+                                    href={achievement.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="achievement-link"
+                                >
+                                    [Link]
+                                </a>
+                            )}
                         </p>
                     </motion.div>
                 ))}
             </div>
+
+            {/* Contest Participation Section */}
+
+            <h2 className="contest-title">
+                <i className="fa-solid fa-trophy section-icon"></i> Contest
+                Participation
+            </h2>
+
+            <div className="contest-grid">
+                {contestData.map((contest, index) => (
+                    <div
+                        key={index}
+                        className="contest-card"
+                        onClick={() => setSelectedImage(contest)}
+                    >
+                        <img src={contest.image} alt={contest.title} />
+                        <p>{contest.title}</p>
+                    </div>
+                ))}
+            </div>
+
+            {/* Image Popup */}
+
+            {selectedImage && (
+                <div
+                    className="image-modal"
+                    onClick={() => setSelectedImage(null)}
+                >
+                    <div
+                        className="modal-content"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <img
+                            src={selectedImage.image}
+                            alt={selectedImage.title}
+                        />
+                        <p>{selectedImage.title}</p>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
