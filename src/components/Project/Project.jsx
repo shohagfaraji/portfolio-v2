@@ -1,7 +1,7 @@
 import React from "react";
 import "./Project.css";
 import Projectitem from "./Projectitem.jsx";
-// import { PROJECTS_IMAGES } from "../../assets/projects";
+import { PROJECTS_IMAGES } from "../../assets/projects";
 import thesis_1 from "../../assets/projects/thesis-sample.webp";
 import ecommerce_django_react from "../../assets/projects/ecommerce.webp";
 import ShiftTextLogoLight from "../../assets/projects/Shift-Text-Logo-Light.webp";
@@ -13,7 +13,8 @@ const Project = () => {
         {
             sourceCodeLink:
                 "https://github.com/shohagfaraji/Fall-Detection-in-Surveillance-Systems-Using-YOLO-and-Pose-Based-Analysis",
-            deployedLink: "",
+            deployedLink:
+                "https://www.linkedin.com/feed/update/urn:li:activity:7401675334401892352/",
             name: "Fall Detection in Surveillance Systems Using YOLO and Pose-Based Analysis",
             description:
                 "A functional vision based fall detection system has been developed for monitoring human activity in surveillance footage. It can classify human states such as walking, sitting, and falling using YOLO-based object detection and verifies posture using pose estimation techniques.",
@@ -25,13 +26,23 @@ const Project = () => {
         {
             sourceCodeLink:
                 "https://github.com/shohagfaraji/react-django-ecommerce",
-            deployedLink: "",
+            deployedLink: "https://evoltedge.netlify.app/",
             name: "Full-Stack E-Commerce Web Application",
             description:
                 "A full-stack e-commerce web application built as a learning project using Django and React. The application features user authentication, product management, shopping cart functionality, and order processing, backed by a PostgreSQL database (managed via pgAdmin 4) and a responsive UI built with Tailwind CSS.",
             languages:
                 "Python | Django | React | Tailwind CSS | PostgreSQL | pgAdmin 4 | REST APIs",
             image: ecommerce_django_react,
+            projectType: "Learning Project",
+        },
+        {
+            sourceCodeLink: "https://github.com/shohagfaraji/food-recipe-mern",
+            deployedLink: "https://github.com/shohagfaraji/food-recipe-mern",
+            name: "Full-Stack Recipe Blog Application",
+            description:
+                "A full-stack recipe blog application built with the MERN stack.",
+            languages: "MongoDB | Express.js | React | Node.js",
+            image: PROJECTS_IMAGES.ecommerce_django_react,
             projectType: "Learning Project",
         },
         {
