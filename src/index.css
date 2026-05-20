@@ -8,12 +8,15 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 :root {
@@ -33,6 +36,14 @@ body {
     --navbar-hover-shadow: rgba(0, 102, 204, 0.5);
     --theme-icon-hover-bg: #e0e0e0;
     --navbar-dropdown-bg: #e8edf2;
+
+    --skills-heading-color: #333c4d;
+    --skills-text-color: #222222;
+    --skills-card-bg: #ffffff;
+    --skills-card-border: #dddddd;
+    --skills-card-hover-border: #cccccc;
+    --skills-card-shadow: rgba(0, 0, 0, 0.1);
+    --skills-card-bg-alt: #f5f5f5;
 }
 
 body.dark {
@@ -52,6 +63,14 @@ body.dark {
     --navbar-hover-shadow: rgba(13, 202, 240, 0.8);
     --theme-icon-hover-bg: rgba(255, 255, 255, 0.15);
     --navbar-dropdown-bg: #1e1e1e;
+
+    --skills-heading-color: #ffffff;
+    --skills-text-color: #cccccc;
+    --skills-card-bg: #222222;
+    --skills-card-border: #444444;
+    --skills-card-hover-border: #666666;
+    --skills-card-shadow: rgba(0, 0, 0, 0.3);
+    --skills-card-bg-alt: #333333;
 }
 
 body {
@@ -69,7 +88,9 @@ body {
     border-radius: 8px;
     cursor: pointer;
     z-index: 0;
-    transition: color 0.3s, border-color 0.3s;
+    transition:
+        color 0.3s,
+        border-color 0.3s;
     background: transparent;
 }
 
