@@ -44,6 +44,28 @@ body {
     --skills-card-hover-border: #cccccc;
     --skills-card-shadow: rgba(0, 0, 0, 0.1);
     --skills-card-bg-alt: #f5f5f5;
+
+    --proj-card-bg: #f9f9f9;
+    --proj-shadow: rgba(0, 0, 0, 0.5);
+
+    --proj-title-color: #111;
+    --proj-desc-color: #444;
+
+    --proj-link-color: #2563eb;
+    --proj-link-hover: #1e40af;
+
+    --tag-bg: #e5e7eb;
+    --tag-text: #333;
+    --tag-border: #ccc;
+    --tag-hover-bg: #d1d5db;
+    --tag-hover-text: #000;
+
+    --btn-bg: #ff0050;
+    --btn-text: #fff;
+    --btn-hover-bg: #e60045;
+
+    --img-strip-bg: #caccd1;
+    --img-strip-hover: #4e90ff;
 }
 
 body.dark {
@@ -71,6 +93,28 @@ body.dark {
     --skills-card-hover-border: #666666;
     --skills-card-shadow: rgba(0, 0, 0, 0.3);
     --skills-card-bg-alt: #333333;
+
+    --proj-card-bg: #1e1e1e;
+    --proj-shadow: rgba(0, 0, 0, 0.5);
+
+    --proj-title-color: #fff;
+    --proj-desc-color: #ccc;
+
+    --proj-link-color: #4e90ff;
+    --proj-link-hover: #006cbd;
+
+    --tag-bg: #2d2d2d;
+    --tag-text: #c0c0c0;
+    --tag-border: #444;
+    --tag-hover-bg: #444;
+    --tag-hover-text: #fff;
+
+    --btn-bg: #ff0050;
+    --btn-text: #fff;
+    --btn-hover-bg: #e60045;
+
+    --img-strip-bg: #caccd1;
+    --img-strip-hover: #4e90ff;
 }
 
 body {
