@@ -31,9 +31,9 @@ const Project = () => {
             description:
                 "A full-stack e-commerce web application built as a learning project using Django and React. The application features user authentication, product management, shopping cart functionality, and order processing, backed by a PostgreSQL database (managed via pgAdmin 4) and a responsive UI built with Tailwind CSS.",
             languages:
-                "Python | Django | React | Tailwind CSS | PostgreSQL | pgAdmin 4 | REST APIs",
+                "JavaScript | Python | Django REST Framework | React | Tailwind CSS | PostgreSQL",
             image: ecommerce_django_react,
-            projectType: "Learning Project",
+            projectType: "Project",
         },
         {
             sourceCodeLink: "https://github.com/shohagfaraji/food-recipe-mern",
@@ -43,7 +43,7 @@ const Project = () => {
                 "A full-stack recipe blog application built with the MERN stack.",
             languages: "MongoDB | Express.js | React | Node.js",
             image: PROJECTS_IMAGES.ecommerce_django_react,
-            projectType: "Learning Project",
+            projectType: "Project",
         },
         {
             sourceCodeLink: "https://github.com/shohagfaraji/react-text-tool",

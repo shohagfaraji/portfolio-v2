@@ -118,7 +118,9 @@ body.dark {
 
 .timeline-item:hover {
     transform: translateY(-4px);
-    transition: transform 0.2s ease, box-shadow 0.2s ease,
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
         background-color 0.3s ease;
     box-shadow: 0 8px 25px var(--exp-hover-shadow);
     background-color: var(--exp-hover-bg);
@@ -155,4 +157,22 @@ body.dark {
     color: var(--exp-toggle);
     cursor: pointer;
     font-weight: 500;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .experience-timeline {
+        max-width: 100%;
+        padding-left: 28px;
+        padding-right: 8px;
+    }
+
+    .timeline-item {
+        padding: 16px 16px;
+        margin-bottom: 40px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.2rem;
+    }
 }

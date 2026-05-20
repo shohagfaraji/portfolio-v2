@@ -8,12 +8,15 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 :root {
@@ -33,6 +36,45 @@ body {
     --navbar-hover-shadow: rgba(0, 102, 204, 0.5);
     --theme-icon-hover-bg: #e0e0e0;
     --navbar-dropdown-bg: #e8edf2;
+
+    --skills-heading-color: #333c4d;
+    --skills-text-color: #222222;
+    --skills-card-bg: #ffffff;
+    --skills-card-border: #dddddd;
+    --skills-card-hover-border: #cccccc;
+    --skills-card-shadow: rgba(0, 0, 0, 0.1);
+    --skills-card-bg-alt: #f5f5f5;
+
+    --proj-card-bg: #f9f9f9;
+    --proj-shadow: rgba(0, 0, 0, 0.5);
+
+    --proj-title-color: #111;
+    --proj-desc-color: #444;
+
+    --proj-link-color: #2563eb;
+    --proj-link-hover: #1e40af;
+
+    --tag-bg: #e5e7eb;
+    --tag-text: #333;
+    --tag-border: #ccc;
+    --tag-hover-bg: #d1d5db;
+    --tag-hover-text: #000;
+
+    --btn-bg: #ff0050;
+    --btn-text: #fff;
+    --btn-hover-bg: #e60045;
+
+    --img-strip-bg: #caccd1;
+    --img-strip-hover: #4e90ff;
+
+    --achieve-bg: #bcdffb;
+    --achieve-border: #68bafd;
+    --achieve-accent: #f05353;
+    --achieve-border-hover: #68bafd;
+    --achieve-link-hover: #f05353;
+    --achieve-highlight1: #059669;
+    --achieve-highlight2: #1a4aba;
+    --link-normal: #004fa4;
 }
 
 body.dark {
@@ -52,6 +94,45 @@ body.dark {
     --navbar-hover-shadow: rgba(13, 202, 240, 0.8);
     --theme-icon-hover-bg: rgba(255, 255, 255, 0.15);
     --navbar-dropdown-bg: #1e1e1e;
+
+    --skills-heading-color: #ffffff;
+    --skills-text-color: #cccccc;
+    --skills-card-bg: #222222;
+    --skills-card-border: #444444;
+    --skills-card-hover-border: #666666;
+    --skills-card-shadow: rgba(0, 0, 0, 0.3);
+    --skills-card-bg-alt: #333333;
+
+    --proj-card-bg: #1e1e1e;
+    --proj-shadow: rgba(0, 0, 0, 0.5);
+
+    --proj-title-color: #fff;
+    --proj-desc-color: #ccc;
+
+    --proj-link-color: #4e90ff;
+    --proj-link-hover: #006cbd;
+
+    --tag-bg: #2d2d2d;
+    --tag-text: #c0c0c0;
+    --tag-border: #444;
+    --tag-hover-bg: #444;
+    --tag-hover-text: #fff;
+
+    --btn-bg: #ff0050;
+    --btn-text: #fff;
+    --btn-hover-bg: #e60045;
+
+    --img-strip-bg: #caccd1;
+    --img-strip-hover: #4e90ff;
+
+    --achieve-bg: #333;
+    --achieve-border: #00ffff;
+    --achieve-accent: #00ffff;
+    --achieve-border-hover: #00ffff;
+    --achieve-link-hover: #ff6347;
+    --achieve-highlight1: #34d399;
+    --achieve-highlight2: #ffd700;
+    --link-normal: #58a0ec;
 }
 
 body {
@@ -69,7 +150,9 @@ body {
     border-radius: 8px;
     cursor: pointer;
     z-index: 0;
-    transition: color 0.3s, border-color 0.3s;
+    transition:
+        color 0.3s,
+        border-color 0.3s;
     background: transparent;
 }
 

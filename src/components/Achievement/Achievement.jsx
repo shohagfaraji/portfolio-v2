@@ -17,8 +17,9 @@ const achievementsData = [
     {
         text: (
             <>
-                <span className="highlight2">Pupil</span> on Codeforces with a
-                maximum rating of <span className="highlight1">1205</span>.
+                <span className="highlight1">Pupil</span> on{" "}
+                <span className="highlight2">Codeforces</span> with a maximum
+                rating of <span className="highlight1">1205</span>.
             </>
         ),
         link: "https://codeforces.com/profile/cse",
