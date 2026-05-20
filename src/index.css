@@ -66,6 +66,15 @@ body {
 
     --img-strip-bg: #caccd1;
     --img-strip-hover: #4e90ff;
+
+    --achieve-bg: #bcdffb;
+    --achieve-border: #68bafd;
+    --achieve-accent: #f05353;
+    --achieve-border-hover: #68bafd;
+    --achieve-link-hover: #f05353;
+    --achieve-highlight1: #059669;
+    --achieve-highlight2: #1a4aba;
+    --link-normal: #004fa4;
 }
 
 body.dark {
@@ -115,6 +124,15 @@ body.dark {
 
     --img-strip-bg: #caccd1;
     --img-strip-hover: #4e90ff;
+
+    --achieve-bg: #333;
+    --achieve-border: #00ffff;
+    --achieve-accent: #00ffff;
+    --achieve-border-hover: #00ffff;
+    --achieve-link-hover: #ff6347;
+    --achieve-highlight1: #34d399;
+    --achieve-highlight2: #ffd700;
+    --link-normal: #58a0ec;
 }
 
 body {
