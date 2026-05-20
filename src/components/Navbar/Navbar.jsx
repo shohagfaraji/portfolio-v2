@@ -72,12 +72,7 @@ const Navbar = () => {
                                 key={index}
                                 href={link.href}
                                 onClick={() => handleLinkClick(link.href)}
-                                whileHover={{
-                                    scale: 1.1,
-                                    color: "#0dcaf0",
-                                    textShadow:
-                                        "0 0 8px rgba(13, 202, 240, 0.8)",
-                                }}
+                                whileHover={{ scale: 1.1 }}
                                 transition={{ type: "spring", stiffness: 300 }}
                                 className={`nav-link-animated ${
                                     currentSection ===

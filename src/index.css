@@ -17,32 +17,46 @@ body {
 }
 
 :root {
-    --bg-color: #abd1f7;
-    --text-color: #333c4d;
+    --bg-color: #f0f4f8;
+    --text-color: #1a4027;
     --accent-color: #0066cc;
     --link-hover-color: #005bb5;
+    --primary-color: #29401a;
+
+    --btn-shine-text-color: #007bff;
+    --btn-shine-glow: rgba(0, 123, 255, 0.2);
+
+    --navbar-bg-color: #f0f4f8;
+    --navbar-text-color: #1a2340;
+    --navbar-accent-color: #0066cc;
+    --navbar-active-color: #0066cc;
+    --navbar-hover-shadow: rgba(0, 102, 204, 0.5);
+    --theme-icon-hover-bg: #e0e0e0;
+    --navbar-dropdown-bg: #e8edf2;
 }
 
 body.dark {
     --bg-color: #151515;
-    --text-color: white;
+    --text-color: #e8eaf6;
     --accent-color: #0dcaf0;
-    --link-hover-color: #005bb5;
+    --link-hover-color: #0bbbe0;
+    --primary-color: #e8eaf6;
+
+    --btn-shine-text-color: #4e90ff;
+    --btn-shine-glow: rgba(78, 144, 255, 0.2);
+
+    --navbar-bg-color: #151515;
+    --navbar-text-color: #e8eaf6;
+    --navbar-accent-color: #0dcaf0;
+    --navbar-active-color: #0dcaf0;
+    --navbar-hover-shadow: rgba(13, 202, 240, 0.8);
+    --theme-icon-hover-bg: rgba(255, 255, 255, 0.15);
+    --navbar-dropdown-bg: #1e1e1e;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-}
-
-:root {
-    --btn-shine-text-color: #007bff;
-    --btn-shine-glow: rgba(0, 123, 255, 0.2);
-}
-
-body.dark {
-    --btn-shine-text-color: #4e90ff;
-    --btn-shine-glow: rgba(78, 144, 255, 0.2);
 }
 
 .shine-button {
