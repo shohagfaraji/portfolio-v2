@@ -7,8 +7,8 @@ const PARTICLE_COUNT = 100;
 const BackgroundParticles = () => {
     const particles = useMemo(
         () =>
-            Array.from({ length: PARTICLE_COUNT }, () => ({
-                id: Date.now() + Math.random(),
+            Array.from({ length: PARTICLE_COUNT }, (_, index) => ({
+                id: index,
                 top: Math.random() * 100,
                 left: Math.random() * 100,
                 size: Math.random() * 3 + 2,
@@ -17,7 +17,7 @@ const BackgroundParticles = () => {
                 duration: Math.random() * 3 + 12,
                 delay: Math.random() * 2,
             })),
-        []
+        [],
     );
 
     return (
