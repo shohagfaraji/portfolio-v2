@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import "./Projectitem.css";
 
@@ -10,13 +10,34 @@ const Projectitem = (props) => {
         description,
         languages,
         image,
+        video,
         index,
         projectType,
     } = props;
 
+    const [hovered, setHovered] = useState(false);
     const [expanded, setExpanded] = useState(false);
+    const videoRef = useRef(null);
     const SHORT_LIMIT = 120;
     const isLong = description.length > SHORT_LIMIT;
+
+    const handleMouseEnter = () => {
+        if (!video) return;
+        setHovered(true);
+        if (videoRef.current) {
+            videoRef.current.currentTime = 0;
+            videoRef.current.play();
+        }
+    };
+
+    const handleMouseLeave = () => {
+        if (!video) return;
+        setHovered(false);
+        if (videoRef.current) {
+            videoRef.current.pause();
+            videoRef.current.currentTime = 0;
+        }
+    };
 
     return (
         <motion.div
@@ -26,14 +47,31 @@ const Projectitem = (props) => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.08 }}
         >
-            <div className="image-wrapper">
-                <img src={image} alt={`${name} screenshot`} />
+            <div
+                className="image-wrapper"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+            >
+                <img
+                    src={image}
+                    alt={`${name} screenshot`}
+                    className={hovered && video ? "media-hidden" : ""}
+                />
+                {video && (
+                    <video
+                        ref={videoRef}
+                        src={video}
+                        muted
+                        loop
+                        playsInline
+                        className={hovered ? "media-visible" : "media-hidden"}
+                    />
+                )}
             </div>
 
             <div className="project-details">
                 <p className="project-type">— {projectType}</p>
                 <h3 className="project-title">{name}</h3>
-
                 <div className="tech-tags">
                     {languages.split("|").map((lang, tagIndex) => (
                         <span key={tagIndex} className="tech-tag">
@@ -41,7 +79,6 @@ const Projectitem = (props) => {
                         </span>
                     ))}
                 </div>
-
                 <p className="project-desc">
                     {expanded || !isLong
                         ? description
@@ -55,7 +92,6 @@ const Projectitem = (props) => {
                         </span>
                     )}
                 </p>
-
                 <div className="project-buttons">
                     <motion.a
                         href={sourceCodeLink}

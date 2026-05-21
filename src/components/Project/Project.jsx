@@ -1,7 +1,7 @@
 import React from "react";
 import "./Project.css";
 import Projectitem from "./Projectitem.jsx";
-import { PROJECTS_IMAGES } from "../../assets/projects";
+import { PROJECTS } from "../../assets/projects";
 import thesis_1 from "../../assets/projects/thesis-sample.webp";
 import ecommerce_django_react from "../../assets/projects/ecommerce.webp";
 import ShiftTextLogoLight from "../../assets/projects/Shift-Text-Logo-Light.webp";
@@ -21,6 +21,7 @@ const Project = () => {
             languages:
                 "Python | OpenCV | Deep Learning | YOLOv8 | YOLOv11 | Pose Estimation",
             image: thesis_1,
+            video: PROJECTS.thesis_1.video,
             projectType: "Thesis",
         },
         {
@@ -33,6 +34,7 @@ const Project = () => {
             languages:
                 "JavaScript | Python | Django REST Framework | React | Tailwind CSS | PostgreSQL",
             image: ecommerce_django_react,
+            video: PROJECTS.ecommerce.video,
             projectType: "Project",
         },
         {
@@ -42,7 +44,8 @@ const Project = () => {
             description:
                 "A full-stack recipe blog application built with the MERN stack.",
             languages: "MongoDB | Express.js | React | Node.js",
-            image: PROJECTS_IMAGES.ecommerce_django_react,
+            image: PROJECTS.blank.image,
+            video: null,
             projectType: "Project",
         },
         {
@@ -53,6 +56,7 @@ const Project = () => {
                 "ShiftText is a React-based text utility tool offering live word/character count, case conversion, word replacement, Morse code & Caesar cipher encoding/decoding, link extraction, space cleanup, and export to .txt or PDF. It also includes a customizable countdown timer for study sessions or exam prep.",
             languages: "React JS | React Router | HTML | CSS | Bootstrap",
             image: ShiftTextLogoLight,
+            video: null,
             projectType: "Exam Preparation Portal",
         },
         {
@@ -65,6 +69,7 @@ const Project = () => {
                 "A collection of creative graphics programs developed as part of the Computer Graphics Lab course. The project includes custom-designed scenes such as the National Martyrs' Monument and other illustrative diagrams. Implemented using core graphics concepts including transformations, drawing algorithms, and user interaction, with a final project showcasing advanced rendering and scene composition.",
             languages: "C++ | OpenGL | Glut | Data Structures | Algorithms",
             image: national_martyrs_monument,
+            video: null,
             projectType: "Personal Project",
         },
         {
@@ -78,6 +83,7 @@ const Project = () => {
             languages:
                 "Johnson Counter | 555 timer | LEDs | Resistors | Capacitors | Potentiometer | Breadboard | DC/battery input",
             image: traffic_system,
+            video: null,
             projectType: "Academic Project",
         },
     ];
@@ -97,6 +103,7 @@ const Project = () => {
                             description={project.description}
                             languages={project.languages}
                             image={project.image}
+                            video={project.video}
                             sourceCodeLink={project.sourceCodeLink}
                             deployedLink={project.deployedLink}
                             projectType={project.projectType}
