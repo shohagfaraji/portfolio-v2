@@ -32,12 +32,12 @@ function App() {
             <Navbar />
             <HeroSection />
             <AboutMe />
-            <Education />
             <Skills />
-            <TapeSection />
             <Experience />
             <Project />
+            <TapeSection />
             <Achievement />
+            <Education />
             <CodingProfilesSection />
             <Form />
             <Contact />

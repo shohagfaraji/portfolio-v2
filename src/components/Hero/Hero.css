@@ -143,12 +143,14 @@ body.dark {
     font-size: 40px;
     font-weight: 700;
     background: var(--hero-title-gradient-primary);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .hero-content h1 {
     background: var(--hero-title-gradient-secondary);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;

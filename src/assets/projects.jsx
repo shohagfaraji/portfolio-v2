@@ -29,14 +29,3 @@ export const PROJECTS = {
         video: null,
     },
 };
-
-// import { PROJECTS_IMAGES, PROJECTS_VIDEOS } from "@/assets/projects";
-
-// <img src={PROJECTS_IMAGES.traffic_system} />
-
-// <video controls>
-//     <source
-//         src={PROJECTS_VIDEOS.traffic_system_demo}
-//         type="video/mp4"
-//     />
-// </video>

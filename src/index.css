@@ -75,6 +75,8 @@ body {
     --achieve-highlight1: #059669;
     --achieve-highlight2: #1a4aba;
     --link-normal: #004fa4;
+
+    --education-bg-color: #f0f4f8;
 }
 
 body.dark {
@@ -133,6 +135,8 @@ body.dark {
     --achieve-highlight1: #34d399;
     --achieve-highlight2: #ffd700;
     --link-normal: #58a0ec;
+
+    --education-bg-color: #1e1e1e;
 }
 
 body {
