@@ -46,12 +46,12 @@ const Navbar = () => {
     }, []);
 
     const links = [
-        { label: "About Me", href: "#AboutMe" },
-        { label: "Education", href: "#Education" },
+        { label: "About", href: "#AboutMe" },
         { label: "Skills", href: "#Skills" },
         { label: "Experience", href: "#Experience" },
         { label: "Projects", href: "#Projects" },
         { label: "Achievement", href: "#Achievement" },
+        { label: "Education", href: "#Education" },
         { label: "Coding Profiles", href: "#Coding-profiles" },
         { label: "Contact", href: "#Contact" },
     ];
