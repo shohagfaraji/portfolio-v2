@@ -47,13 +47,6 @@ const Contact = () => {
                 </div>
                 <div className="footer-border">
                     <p className="footer-text">
-                        <a
-                            href="https://sh0hag.netlify.app/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Portfolio v1.0
-                        </a>{" "}
                         &copy; {currentYear} Shohag Faraji. All rights reserved.
                     </p>
                 </div>

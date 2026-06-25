@@ -64,12 +64,6 @@ const skills = [
 
     // Backend
     {
-        name: "Node.js",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-        logoColor: "#68a063",
-    },
-    {
         name: "Express",
         logoUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
@@ -100,40 +94,6 @@ const skills = [
         logoUrl:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
         logoColor: "#336791",
-    },
-
-    // API Testing
-    {
-        name: "Postman",
-        logoUrl:
-            "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-        logoColor: "#FF6C37",
-    },
-    {
-        name: "Thunder Client",
-        logoUrl:
-            "https://raw.githubusercontent.com/rangav/thunder-client-support/main/images/thunder-icon.png",
-        logoColor: "#7B61FF",
-    },
-
-    // Deployment
-    {
-        name: "Netlify",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg",
-        logoColor: "#00C7B7",
-    },
-    {
-        name: "Render",
-        logoUrl: renderLogo,
-        logoColor: "#46E3B7",
-    },
-
-    // Auth / Concepts
-    {
-        name: "JWT",
-        logoUrl: "https://cdn.worldvectorlogo.com/logos/jwt-3.svg",
-        logoColor: "#000000",
     },
 
     // Version Control / Tools
