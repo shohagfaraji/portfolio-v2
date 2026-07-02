@@ -38,6 +38,18 @@ const Project = () => {
             projectType: "Project",
         },
         {
+            sourceCodeLink: "https://github.com/shohagfaraji/copeforces",
+            deployedLink: "https://copeforces.netlify.app/",
+            name: "CopeForces – Competitive Programming Toolkit",
+            description:
+                "A competitive programming companion built to save time during online contests like Codeforces. It provides contest utilities, debugging tools, string and number theory utilities, tree and graph visualizers, and interactive implementations of popular data structures and algorithms in a single web application.",
+            languages:
+                "React | JavaScript | Tailwind CSS | HTML | CSS | Data Structures & Algorithms | Competitive Programming",
+            image: PROJECTS.copeforces.image,
+            video: PROJECTS.copeforces.video,
+            projectType: "Project",
+        },
+        {
             sourceCodeLink: "https://github.com/shohagfaraji/food-recipe-mern",
             deployedLink: "https://github.com/shohagfaraji/food-recipe-mern",
             name: "Full-Stack Recipe Blog Application",
@@ -48,17 +60,17 @@ const Project = () => {
             video: null,
             projectType: "Project",
         },
-        {
-            sourceCodeLink: "https://github.com/shohagfaraji/react-text-tool",
-            deployedLink: "https://shifttext.netlify.app/",
-            name: "📚 ShiftText – Text Utility & Encoding Tool",
-            description:
-                "ShiftText is a React-based text utility tool offering live word/character count, case conversion, word replacement, Morse code & Caesar cipher encoding/decoding, link extraction, space cleanup, and export to .txt or PDF. It also includes a customizable countdown timer for study sessions or exam prep.",
-            languages: "React JS | React Router | HTML | CSS | Bootstrap",
-            image: ShiftTextLogoLight,
-            video: null,
-            projectType: "Exam Preparation Portal",
-        },
+        // {
+        //     sourceCodeLink: "https://github.com/shohagfaraji/react-text-tool",
+        //     deployedLink: "https://shifttext.netlify.app/",
+        //     name: "📚 ShiftText – Text Utility & Encoding Tool",
+        //     description:
+        //         "ShiftText is a React-based text utility tool offering live word/character count, case conversion, word replacement, Morse code & Caesar cipher encoding/decoding, link extraction, space cleanup, and export to .txt or PDF. It also includes a customizable countdown timer for study sessions or exam prep.",
+        //     languages: "React JS | React Router | HTML | CSS | Bootstrap",
+        //     image: ShiftTextLogoLight,
+        //     video: null,
+        //     projectType: "Exam Preparation Portal",
+        // },
         {
             sourceCodeLink:
                 "https://github.com/shohagfaraji/computer-graphics-lab-works",
