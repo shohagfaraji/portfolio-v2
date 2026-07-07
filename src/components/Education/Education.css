@@ -1,35 +1,40 @@
 .education-section {
-    padding: 60px 4% 2rem 4%;
+    padding: 70px 4% 2rem 4%;
 }
 
 .education-section h2 {
     text-align: center;
     margin-bottom: 2.5rem;
-    font-size: 3rem;
+    font-size: clamp(2rem, 3vw, 3rem);
     color: var(--education-heading-color);
+    line-height: 1.15;
 }
 
 .education-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
+    gap: 1.1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .edu-card {
     background-color: var(--education-bg-color);
+    border: 1px solid var(--border-color);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-sm);
     display: flex;
     flex-direction: column;
-    transition: box-shadow 0.3s ease;
+    transition:
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
     cursor: default;
 }
 
 .edu-card:hover {
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
 }
 
 .edu-card-image {
@@ -54,7 +59,7 @@
     position: absolute;
     bottom: 8px;
     right: 8px;
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(15, 23, 42, 0.72);
     color: #fff;
     font-size: 0.7rem;
     font-weight: 600;

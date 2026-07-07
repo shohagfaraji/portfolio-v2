@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Experience = () => {
     const experiences = [
         {
-            role: "🧑‍💻 Competitive Programming Trainer at UAP",
+            role: "Competitive Programming Trainer at UAP",
             organization: "University of Asia Pacific",
             duration: "2023 - Present",
             details:
@@ -71,15 +71,11 @@ const Experience = () => {
                                     ? experience.details
                                     : `${experience.details.substring(
                                           0,
-                                          250
+                                          250,
                                       )}...`}{" "}
                                 <span
                                     className="toggle-button"
                                     onClick={() => toggleExpanded(index)}
-                                    style={{
-                                        color: "#0078d4",
-                                        cursor: "pointer",
-                                    }}
                                 >
                                     {expanded[index] ? "See Less" : "See More"}
                                 </span>

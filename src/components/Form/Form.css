@@ -1,37 +1,40 @@
 :root {
-    --cf-form-bg-color: #ffffff;
-    --cf-input-border-color: #d1d5db;
-    --cf-input-focus-color: #007bff;
-    --cf-input-text-color: #151515;
-    --cf-button-bg-color: #007bff;
+    --cf-form-bg-color: var(--surface-color);
+    --cf-input-border-color: var(--border-color);
+    --cf-input-focus-color: var(--accent-color);
+    --cf-input-text-color: var(--text-color);
+    --cf-button-bg-color: var(--btn-bg);
     --cf-button-text-color: #ffffff;
-    --cf-button-hover-bg-color: #0056b3;
-    --cf-placeholder-color: #151515;
+    --cf-button-hover-bg-color: var(--btn-hover-bg);
+    --cf-placeholder-color: var(--muted-text);
 }
 
 body.dark {
-    --cf-form-bg-color: #333;
-    --cf-input-border-color: #666;
-    --cf-input-focus-color: #00ffff;
-    --cf-input-text-color: #fff;
-    --cf-button-bg-color: #4e90ff;
-    --cf-button-text-color: #fff;
-    --cf-button-hover-bg-color: #006cbd;
-    --cf-placeholder-color: #ccc;
+    --cf-form-bg-color: var(--surface-color);
+    --cf-input-border-color: var(--border-color);
+    --cf-input-focus-color: var(--accent-color);
+    --cf-input-text-color: var(--text-color);
+    --cf-button-bg-color: var(--btn-bg);
+    --cf-button-text-color: #0f172a;
+    --cf-button-hover-bg-color: var(--btn-hover-bg);
+    --cf-placeholder-color: var(--muted-text);
 }
 
 .contact-form {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 70px auto 50px;
     padding: 30px;
     background-color: var(--cf-form-bg-color);
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    backdrop-filter: blur(18px);
 }
 
 .contact-form h1 {
     text-align: center;
     margin-bottom: 40px;
+    color: var(--primary-color);
 }
 
 form {
@@ -53,12 +56,15 @@ form {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 12px 0;
-    background-color: var(--cf-form-bg-color);
-    border: none;
-    border-bottom: 2px dotted var(--cf-input-border-color);
+    padding: 12px 14px;
+    background-color: var(--surface-solid);
+    border: 1px solid var(--cf-input-border-color);
+    border-radius: 10px;
     outline: none;
     color: var(--cf-input-text-color);
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .row .form-group:not(:first-child) {
@@ -68,12 +74,13 @@ form {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-bottom: 2px dotted var(--cf-input-focus-color);
+    border-color: var(--cf-input-focus-color);
+    box-shadow: 0 0 0 4px var(--accent-soft);
 }
 
 button {
     align-self: start;
-    padding: 12px;
+    padding: 12px 22px;
     background-color: var(--cf-button-bg-color);
     color: var(--cf-button-text-color);
     border: none;
@@ -84,12 +91,13 @@ button {
 
 button:hover {
     background-color: var(--cf-button-hover-bg-color);
+    transform: translateY(-1px);
 }
 
 input::placeholder,
 textarea::placeholder {
     color: var(--cf-placeholder-color);
-    font-weight: bold;
+    font-weight: 600;
 }
 
 @media (max-width: 1000px) {

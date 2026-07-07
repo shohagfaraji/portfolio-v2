@@ -26,7 +26,12 @@ const Projectitem = (props) => {
         setHovered(true);
         if (videoRef.current) {
             videoRef.current.currentTime = 0;
-            videoRef.current.play();
+            const playPromise = videoRef.current.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(() => {
+                    // Hover previews can be interrupted when the cursor leaves quickly.
+                });
+            }
         }
     };
 
@@ -70,7 +75,7 @@ const Projectitem = (props) => {
             </div>
 
             <div className="project-details">
-                <p className="project-type">— {projectType}</p>
+                <p className="project-type">- {projectType}</p>
                 <h3 className="project-title">{name}</h3>
                 <div className="tech-tags">
                     {languages.split("|").map((lang, tagIndex) => (

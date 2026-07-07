@@ -68,7 +68,7 @@ const SkillTagCloud = () => {
                 const z = Math.sin(phi) * r;
 
                 points.push(
-                    new THREE.Vector3(x * radius, y * radius, z * radius)
+                    new THREE.Vector3(x * radius, y * radius, z * radius),
                 );
             }
             return points;
@@ -119,7 +119,7 @@ const SkillTagCloud = () => {
                 texture.minFilter = THREE.NearestFilter;
 
                 const sprite = new THREE.Sprite(
-                    new THREE.SpriteMaterial({ map: texture })
+                    new THREE.SpriteMaterial({ map: texture }),
                 );
                 const aspect = texture.image.width / texture.image.height;
                 sprite.scale.set(size * aspect, size, 1);

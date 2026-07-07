@@ -35,7 +35,7 @@ function App() {
             <Skills />
             <Experience />
             <Project />
-            <TapeSection />
+            {/* <TapeSection /> */}
             <Achievement />
             <Education />
             <CodingProfilesSection />

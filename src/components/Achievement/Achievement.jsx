@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./Achievement.css";
-// import { PROJECTS_IMAGES } from "../../assets/projects";
 import icpc from "../../assets/contests/icpc-1.webp";
 import buet from "../../assets/contests/buet-1.webp";
 import kuet from "../../assets/contests/kuet-2.webp";
@@ -15,88 +14,70 @@ import nwu from "../../assets/contests/nwu-1.webp";
 
 const achievementsData = [
     {
-        text: (
-            <>
-                <span className="highlight1">Pupil</span> on{" "}
-                <span className="highlight2">Codeforces</span> with a maximum
-                rating of <span className="highlight1">1205</span>.
-            </>
-        ),
+        date: "Jul 2026",
+        title: "ICPC JRC Scholarship",
+        category: "Scholarship",
+        details:
+            "Selected for the ICPC JRC Scholarship in 6 consecutive semesters for contest performance, funded by the ICPC Foundation.",
+        meta: "Also awarded in May 2025 and Sep 2024",
+    },
+    {
+        date: "Oct 2025",
+        title: "Vice Chancellor's Honour Award",
+        category: "Academic Honour",
+        details:
+            "Recognized for strong academic performance in the Fall 2024 semester.",
+    },
+    {
+        date: "Aug 2025",
+        title: "Math Olympiad Participation",
+        category: "Competition",
+        details:
+            "Participated in university-level math olympiad events to strengthen analytical and problem-solving skills.",
+        meta: "Also participated in Jan 2025",
+    },
+    {
+        date: "29 Mar 2025",
+        title: "Codeforces Pupil Rank Achieved",
+        category: "Competitive Programming",
+        details:
+            "Reached Pupil rank on Codeforces while maintaining regular practice and contest participation.",
         link: "https://codeforces.com/profile/cse",
     },
     {
-        text: (
-            <>
-                <span className="highlight2">Champion</span> -{" "}
-                <span className="highlight1">
-                    অমর একুশে প্রোগ্রামিং কনটেস্ট ২০২৩, ইউএপি
-                </span>
-            </>
-        ),
-        link: "",
+        date: "Oct 2024",
+        title: "Dean's Honour Award",
+        category: "Academic Honour",
+        details:
+            "Received Dean's Honour Award for academic excellence across multiple semesters.",
+        meta: "Also awarded in Apr 2023 and Mar 2024",
     },
     {
-        text: (
-            <>
-                <span className="highlight2">Best UAP Team</span> Inter
-                University Collaborative Programing Contest (IUCPC) 2024.
-            </>
-        ),
-        link: "",
+        date: "Jan 2024",
+        title: "Best UAP Team Award - IUCPC 2024",
+        category: "Programming Contest",
+        details:
+            "Recognized as the Best UAP Team in the Inter-University Collaborative Programming Contest 2024.",
     },
     {
-        text: (
-            <>
-                <span className="highlight2">Winner</span> - Digital Logic &
-                System Design Lab Final Project.
-            </>
-        ),
-        link: "",
+        date: "Dec 2023",
+        title: "Winner - Digital Logic & System Design Lab Project",
+        category: "Project Award",
+        details:
+            "Won for the final lab project in Digital Logic & System Design.",
     },
     {
-        text: (
-            <>
-                Solved <span className="highlight2">2200+ Problems</span> on top
-                platforms,{" "}
-                <span className="highlight2">
-                    Participated in 200+ Virtual Contests
-                </span>
-                .
-            </>
-        ),
-        link: "",
+        date: "21 Feb 2023",
+        title: "Champion - অমর একুশে Programming Contest",
+        category: "Programming Contest",
+        details: "Champion at the UAP অমর একুশে Programming Contest 2023.",
     },
     {
-        text: (
-            <>
-                Received the{" "}
-                <span className="highlight2">
-                    Vice Chancellor's Honour Award
-                </span>{" "}
-                for Fall - 2024 achieving a{" "}
-                <span className="highlight2"> GPA of 3.91.</span>
-            </>
-        ),
-        link: "",
-    },
-    {
-        text: (
-            <>
-                Received the{" "}
-                <span className="highlight2">Dean's Honour Award </span> x3
-                times for academic excellence.
-            </>
-        ),
-        link: "",
-    },
-    {
-        text: (
-            <>
-                Participated in multiple{" "}
-                <span className="highlight2">Math Olympiads</span>.
-            </>
-        ),
-        link: "",
+        date: "2022 - 2025",
+        title: "Solved 2200+ Programming Problems",
+        category: "Problem Solving",
+        details:
+            "Solved 2200+ problems across online judges during the full university period, with 200+ virtual contest participations.",
     },
 ];
 
@@ -130,7 +111,7 @@ const contestData = [
         image: aust,
     },
     {
-        title: "Hi-Fi Computer  Presents MU CSE Fest 2025",
+        title: "Hi-Fi Computer Presents MU CSE Fest 2025",
         image: mu,
     },
     {
@@ -144,7 +125,7 @@ const contestData = [
 ];
 
 const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
+    hidden: { y: 22, opacity: 0 },
     visible: {
         y: 0,
         opacity: 1,
@@ -165,20 +146,35 @@ const Achievements = () => {
                 <i className="fa-solid fa-medal section-icon"></i> Achievements
             </motion.h2>
 
-            <div className="achievements-container">
+            <div className="achievement-timeline">
                 {achievementsData.map((achievement, index) => (
-                    <motion.div
-                        key={index}
-                        className="achievement-item"
+                    <motion.article
+                        key={`${achievement.date}-${achievement.title}`}
+                        className="achievement-timeline-item"
                         variants={itemVariants}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ amount: 0.2 }}
                     >
-                        <i className="fa-solid fa-award achievement-icon"></i>
-
-                        <p className="achievement-text">
-                            {achievement.text}{" "}
+                        <div className="achievement-marker">
+                            <span>{index + 1}</span>
+                        </div>
+                        <div className="achievement-card">
+                            <div className="achievement-card-header">
+                                <span className="achievement-date">
+                                    {achievement.date}
+                                </span>
+                                <span className="achievement-category">
+                                    {achievement.category}
+                                </span>
+                            </div>
+                            <h3>{achievement.title}</h3>
+                            <p>{achievement.details}</p>
+                            {achievement.meta && (
+                                <p className="achievement-meta">
+                                    {achievement.meta}
+                                </p>
+                            )}
                             {achievement.link && (
                                 <a
                                     href={achievement.link}
@@ -186,15 +182,13 @@ const Achievements = () => {
                                     rel="noopener noreferrer"
                                     className="achievement-link"
                                 >
-                                    [Link]
+                                    View profile
                                 </a>
                             )}
-                        </p>
-                    </motion.div>
+                        </div>
+                    </motion.article>
                 ))}
             </div>
-
-            {/* Contest Participation Section */}
 
             <h2 className="contest-title">
                 <i className="fa-solid fa-trophy section-icon"></i> Contest
@@ -214,8 +208,6 @@ const Achievements = () => {
                 ))}
             </div>
 
-            {/* Image Popup */}
-
             {selectedImage && (
                 <div
                     className="image-modal"
@@ -223,7 +215,7 @@ const Achievements = () => {
                 >
                     <div
                         className="modal-content"
-                        onClick={(e) => e.stopPropagation()}
+                        onClick={(event) => event.stopPropagation()}
                     >
                         <img
                             src={selectedImage.image}

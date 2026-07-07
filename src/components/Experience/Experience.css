@@ -1,18 +1,18 @@
 :root {
-    --exp-heading-color: #333c4d;
-    --exp-title-color: #333c4d;
+    --exp-heading-color: var(--primary-color);
+    --exp-title-color: var(--primary-color);
 
-    --exp-card-bg: #f0f4f8;
-    --exp-shadow: rgba(0, 0, 0, 0.6);
-    --exp-hover-shadow: rgba(0, 0, 0, 0.9);
-    --exp-hover-bg: #e6e6e6;
+    --exp-card-bg: var(--surface-color);
+    --exp-shadow: rgba(18, 25, 38, 0.1);
+    --exp-hover-shadow: rgba(18, 25, 38, 0.16);
+    --exp-hover-bg: var(--surface-solid);
 
-    --exp-dot-bg: #7b2ff7;
-    --exp-dot-border: #f107a3;
-    --exp-dot-glow: rgba(123, 47, 247, 0.8);
+    --exp-dot-bg: #2563eb;
+    --exp-dot-border: #ffffff;
+    --exp-dot-glow: rgba(37, 99, 235, 0.28);
 
-    --exp-line-gradient: linear-gradient(to right, #7b2ff7, #f107a3);
-    --exp-line-glow: rgba(123, 47, 247, 0.8);
+    --exp-line-gradient: linear-gradient(to right, #2563eb, #0f766e);
+    --exp-line-glow: rgba(37, 99, 235, 0.18);
 
     --exp-title: #1f2937;
     --exp-org: #4b5563;
@@ -25,17 +25,17 @@ body.dark {
     --exp-heading-color: white;
     --exp-title-color: white;
 
-    --exp-card-bg: #1f1f1f;
-    --exp-shadow: rgba(0, 0, 0, 0.6);
-    --exp-hover-shadow: rgba(0, 0, 0, 0.9);
-    --exp-hover-bg: #2a2a2a;
+    --exp-card-bg: var(--surface-color);
+    --exp-shadow: rgba(0, 0, 0, 0.26);
+    --exp-hover-shadow: rgba(0, 0, 0, 0.38);
+    --exp-hover-bg: var(--surface-solid);
 
-    --exp-dot-bg: #7b2ff7;
-    --exp-dot-border: #f107a3;
-    --exp-dot-glow: rgba(123, 47, 247, 0.8);
+    --exp-dot-bg: #38bdf8;
+    --exp-dot-border: #0f172a;
+    --exp-dot-glow: rgba(56, 189, 248, 0.3);
 
-    --exp-line-gradient: linear-gradient(to right, #7b2ff7, #f107a3);
-    --exp-line-glow: rgba(123, 47, 247, 0.8);
+    --exp-line-gradient: linear-gradient(to right, #38bdf8, #5eead4);
+    --exp-line-glow: rgba(56, 189, 248, 0.22);
 
     --exp-title: #e0e7ff;
     --exp-org: #cbd5e1;
@@ -45,14 +45,14 @@ body.dark {
 }
 
 .experience-section {
-    padding: 60px 20px 0;
+    padding: 70px clamp(1rem, 4vw, 4rem) 0;
     text-align: center;
 }
 
 .experience-section h2 {
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 3vw, 2.8rem);
     color: var(--exp-heading-color);
 }
 
@@ -80,8 +80,9 @@ body.dark {
     justify-content: flex-start;
     background-color: var(--exp-card-bg);
     padding: 20px 30px;
+    border: 1px solid var(--border-color);
     border-radius: 12px;
-    box-shadow: 0 4px 15px var(--exp-shadow);
+    box-shadow: 0 12px 34px var(--exp-shadow);
     margin-bottom: 60px;
     z-index: 2;
     position: relative;
@@ -122,12 +123,12 @@ body.dark {
         transform 0.2s ease,
         box-shadow 0.2s ease,
         background-color 0.3s ease;
-    box-shadow: 0 8px 25px var(--exp-hover-shadow);
+    box-shadow: 0 18px 44px var(--exp-hover-shadow);
     background-color: var(--exp-hover-bg);
 }
 
 .timeline-content h3 {
-    font-size: 1.6rem;
+    font-size: 1.35rem;
     color: var(--exp-title);
     margin-bottom: 8px;
 }
@@ -148,7 +149,7 @@ body.dark {
 }
 
 .details {
-    font-size: 1rem;
+    font-size: 0.98rem;
     line-height: 1.6;
     color: var(--exp-details);
 }

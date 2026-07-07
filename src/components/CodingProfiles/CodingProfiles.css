@@ -1,41 +1,48 @@
 .coding-profiles-section {
-  padding: 60px 10% 3rem 10%;
-  text-align: center;
+    padding: 70px 10% 3rem 10%;
+    text-align: center;
 }
 
 .coding-profiles-section h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: clamp(2rem, 3vw, 3rem);
+    color: var(--primary-color);
+    line-height: 1.15;
 }
 
 .coding-profiles-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 5vmin;
-  margin-top: 5rem;
-  user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vmin;
+    margin-top: 3.5rem;
+    user-select: none;
 }
 
 .coding-profile-link {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 .coding-profile-icon {
-  border-radius: 50%;
-  width: 20vmin;
-  height: 20vmin;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  transition: transform 0.3s ease-in-out;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 18px;
+    width: 20vmin;
+    height: 20vmin;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    transition:
+        transform 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    background: var(--surface-color);
 }
 
 .coding-profile-link:hover .coding-profile-icon {
-  transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md);
 }

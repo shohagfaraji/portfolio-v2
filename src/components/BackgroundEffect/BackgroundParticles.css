@@ -1,6 +1,6 @@
 :root {
-    --particle-light: black;
-    --particle-dark: white;
+    --particle-light: #2563eb;
+    --particle-dark: #38bdf8;
     --particle-color: var(--particle-light);
 }
 
@@ -24,6 +24,6 @@ body.dark {
     width: 4px;
     height: 4px;
     background-color: var(--particle-color);
-    opacity: 0.8;
+    opacity: 0.18;
     border-radius: 50%;
 }

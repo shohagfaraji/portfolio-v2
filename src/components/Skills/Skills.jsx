@@ -1,119 +1,117 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Skills.css";
-import renderLogo from "../../assets/render.svg";
 
-const skills = [
-    // Languages
+const skillGroups = [
     {
-        name: "JavaScript",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        logoColor: "#f7df1e",
+        title: "Languages",
+        skills: [
+            {
+                name: "JavaScript",
+                logoUrl:
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+            },
+            {
+                name: "Python",
+                logoUrl:
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+            },
+            {
+                name: "Java",
+                logoUrl:
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+            },
+            {
+                name: "C++",
+                logoUrl:
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+            },
+        ],
     },
     {
-        name: "Python",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-        logoColor: "#3776ab",
+        title: "Frontend",
+        skills: [
+            {
+                name: "React",
+                logoUrl:
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+            },
+            {
+                name: "HTML",
+                logoUrl:
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+            },
+            {
+                name: "CSS",
+                logoUrl:
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+            },
+            {
+                name: "Tailwind CSS",
+                logoUrl:
+                    "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+            },
+            {
+                name: "Bootstrap",
+                logoUrl:
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+            },
+        ],
     },
     {
-        name: "Java",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-        logoColor: "#007396",
+        title: "Backend",
+        skills: [
+            {
+                name: "Express",
+                logoUrl:
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+            },
+            {
+                name: "Django REST Framework",
+                logoUrl:
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+            },
+        ],
     },
     {
-        name: "C++",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-        logoColor: "#00599C",
-    },
-
-    // Frontend
-    {
-        name: "React",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-        logoColor: "#61dafb",
-    },
-    {
-        name: "HTML",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-        logoColor: "#e34f26",
-    },
-    {
-        name: "CSS",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-        logoColor: "#1572b6",
+        title: "Databases",
+        skills: [
+            {
+                name: "MongoDB",
+                logoUrl:
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+            },
+            {
+                name: "MySQL",
+                logoUrl:
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+            },
+            {
+                name: "PostgreSQL",
+                logoUrl:
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+            },
+        ],
     },
     {
-        name: "Tailwind CSS",
-        logoUrl:
-            "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-        logoColor: "#38BDF8",
-    },
-    {
-        name: "Bootstrap",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-        logoColor: "#563d7c",
-    },
-
-    // Backend
-    {
-        name: "Express",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-        logoColor: "#000000",
-    },
-    {
-        name: "Django REST Framework",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
-        logoColor: "#ff1709",
-    },
-
-    // Databases
-    {
-        name: "MongoDB",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-        logoColor: "#47a248",
-    },
-    {
-        name: "MySQL",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-        logoColor: "#00758F",
-    },
-    {
-        name: "PostgreSQL",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-        logoColor: "#336791",
-    },
-
-    // Version Control / Tools
-    {
-        name: "Git",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-        logoColor: "#f05032",
-    },
-    {
-        name: "GitHub",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-        logoColor: "#181717",
-    },
-    {
-        name: "VS Code",
-        logoUrl:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
-        logoColor: "#007ACC",
+        title: "Tools",
+        skills: [
+            {
+                name: "Git",
+                logoUrl:
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+            },
+            {
+                name: "GitHub",
+                logoUrl:
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+            },
+            {
+                name: "VS Code",
+                logoUrl:
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+            },
+        ],
     },
 ];
 
@@ -125,8 +123,7 @@ const itemVariants = {
         transition: { type: "spring", stiffness: 100 },
     },
     hover: {
-        y: -10,
-        boxShadow: "0 10px 20px rgba(0, 0, 0, 0.5)",
+        y: -8,
         transition: { type: "spring", stiffness: 400, damping: 10 },
     },
 };
@@ -142,28 +139,44 @@ export default function SkillGrid() {
                 <i className="fa fa-cogs" aria-hidden="true"></i> Skills
             </motion.h2>
 
-            <div className="skill-grid">
-                {skills.map((skill, index) => (
-                    <motion.div
-                        key={skill.name + index}
-                        variants={itemVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        whileHover="hover"
-                        viewport={{ amount: 0.2 }}
-                        className="skill-item"
+            <div className="skill-groups">
+                {skillGroups.map((group) => (
+                    <motion.section
+                        className="skill-group"
+                        key={group.title}
+                        initial={{ opacity: 0, y: 24 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                        transition={{ duration: 0.45, ease: "easeOut" }}
                     >
-                        <div className="skill-card">
-                            <div className="skill-icon-container">
-                                <img
-                                    src={skill.logoUrl}
-                                    alt={`${skill.name} logo`}
-                                    className="skill-logo-img"
-                                />
-                            </div>
-                            <div className="skill-name">{skill.name}</div>
+                        <h3>{group.title}</h3>
+                        <div className="skill-grid">
+                            {group.skills.map((skill, index) => (
+                                <motion.div
+                                    key={skill.name + index}
+                                    variants={itemVariants}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    whileHover="hover"
+                                    viewport={{ amount: 0.2 }}
+                                    className="skill-item"
+                                >
+                                    <div className="skill-card">
+                                        <div className="skill-icon-container">
+                                            <img
+                                                src={skill.logoUrl}
+                                                alt={`${skill.name} logo`}
+                                                className="skill-logo-img"
+                                            />
+                                        </div>
+                                        <div className="skill-name">
+                                            {skill.name}
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            ))}
                         </div>
-                    </motion.div>
+                    </motion.section>
                 ))}
             </div>
         </div>

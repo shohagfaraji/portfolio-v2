@@ -101,8 +101,10 @@ const HeroSection = () => {
                         animate={{ opacity: isInView ? 1 : 0 }}
                         transition={{ duration: 1.5 }}
                     >
-                        Solved over 2200 problems on Codeforces (Pupil).
-                        Interested in Building and Exploring Technology
+                        Computer Science graduate, Codeforces Pupil, and
+                        competitive programmer with 2200+ solved problems,
+                        focused on building reliable software through strong
+                        problem-solving.
                     </motion.p>
 
                     <motion.div
@@ -117,13 +119,13 @@ const HeroSection = () => {
                             rel="noopener noreferrer"
                             className="join-button shine-button"
                         >
-                            My Resume
+                            Resume
                         </a>
                         <a
                             href="mailto:shohagfaraji2@gmail.com"
                             className="contact-link shine-button"
                         >
-                            Mail Me
+                            Contact Me
                         </a>
                     </motion.div>
                 </div>

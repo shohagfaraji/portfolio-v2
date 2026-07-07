@@ -1,6 +1,7 @@
 * {
     margin: 0;
-    padding: 0px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -9,163 +10,241 @@ html {
 
 body {
     font-family:
-        -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transition:
         background-color 0.3s ease,
         color 0.3s ease;
+    line-height: 1.6;
 }
 
 :root {
-    --bg-color: #f0f4f8;
-    --text-color: #1a4027;
-    --accent-color: #0066cc;
-    --link-hover-color: #005bb5;
-    --primary-color: #29401a;
+    --bg-color: #f6f8fb;
+    --surface-color: rgba(255, 255, 255, 0.86);
+    --surface-solid: #ffffff;
+    --surface-muted: #eef3f8;
+    --text-color: #172033;
+    --muted-text: #5d687a;
+    --accent-color: #2563eb;
+    --accent-strong: #1d4ed8;
+    --accent-soft: rgba(37, 99, 235, 0.1);
+    --link-hover-color: #1d4ed8;
+    --primary-color: #172033;
+    --border-color: rgba(23, 32, 51, 0.1);
+    --shadow-sm: 0 8px 24px rgba(18, 25, 38, 0.08);
+    --shadow-md: 0 18px 45px rgba(18, 25, 38, 0.12);
 
-    --btn-shine-text-color: #007bff;
-    --btn-shine-glow: rgba(0, 123, 255, 0.2);
+    --btn-shine-text-color: #2563eb;
+    --btn-shine-glow: rgba(255, 255, 255, 0.58);
 
-    --navbar-bg-color: #f0f4f8;
-    --navbar-text-color: #1a2340;
-    --navbar-accent-color: #0066cc;
-    --navbar-active-color: #0066cc;
-    --navbar-hover-shadow: rgba(0, 102, 204, 0.5);
-    --theme-icon-hover-bg: #e0e0e0;
-    --navbar-dropdown-bg: #e8edf2;
+    --navbar-bg-color: rgba(246, 248, 251, 0.86);
+    --navbar-text-color: #172033;
+    --navbar-accent-color: #2563eb;
+    --navbar-active-color: #2563eb;
+    --navbar-hover-shadow: rgba(37, 99, 235, 0.18);
+    --theme-icon-hover-bg: rgba(37, 99, 235, 0.1);
+    --navbar-dropdown-bg: rgba(255, 255, 255, 0.98);
 
-    --skills-heading-color: #333c4d;
-    --skills-text-color: #222222;
+    --skills-heading-color: #172033;
+    --skills-text-color: #293548;
     --skills-card-bg: #ffffff;
-    --skills-card-border: #dddddd;
-    --skills-card-hover-border: #cccccc;
-    --skills-card-shadow: rgba(0, 0, 0, 0.1);
-    --skills-card-bg-alt: #f5f5f5;
+    --skills-card-border: rgba(23, 32, 51, 0.08);
+    --skills-card-hover-border: rgba(37, 99, 235, 0.28);
+    --skills-card-shadow: rgba(18, 25, 38, 0.09);
+    --skills-card-bg-alt: rgba(255, 255, 255, 0.9);
 
-    --proj-card-bg: #f9f9f9;
-    --proj-shadow: rgba(0, 0, 0, 0.5);
+    --proj-card-bg: #ffffff;
+    --proj-shadow: rgba(18, 25, 38, 0.1);
 
-    --proj-title-color: #111;
-    --proj-desc-color: #444;
+    --proj-title-color: #172033;
+    --proj-desc-color: #5d687a;
 
     --proj-link-color: #2563eb;
     --proj-link-hover: #1e40af;
 
-    --tag-bg: #e5e7eb;
-    --tag-text: #333;
-    --tag-border: #ccc;
-    --tag-hover-bg: #d1d5db;
-    --tag-hover-text: #000;
+    --tag-bg: #eef4ff;
+    --tag-text: #24406f;
+    --tag-border: rgba(37, 99, 235, 0.15);
+    --tag-hover-bg: #dbeafe;
+    --tag-hover-text: #1d4ed8;
 
-    --btn-bg: #ff0050;
+    --btn-bg: #2563eb;
     --btn-text: #fff;
-    --btn-hover-bg: #e60045;
+    --btn-hover-bg: #1d4ed8;
 
-    --img-strip-bg: #caccd1;
-    --img-strip-hover: #4e90ff;
+    --img-strip-bg: #dbe4ef;
+    --img-strip-hover: #2563eb;
 
-    --achieve-bg: #bcdffb;
-    --achieve-border: #68bafd;
-    --achieve-accent: #f05353;
-    --achieve-border-hover: #68bafd;
-    --achieve-link-hover: #f05353;
+    --achieve-bg: rgba(255, 255, 255, 0.88);
+    --achieve-border: #2563eb;
+    --achieve-accent: #0f766e;
+    --achieve-border-hover: #1d4ed8;
+    --achieve-link-hover: #1d4ed8;
     --achieve-highlight1: #059669;
-    --achieve-highlight2: #1a4aba;
-    --link-normal: #004fa4;
+    --achieve-highlight2: #1d4ed8;
+    --link-normal: #2563eb;
 
-    --education-bg-color: #f0f4f8;
+    --education-bg-color: #ffffff;
+    --education-heading-color: #172033;
+    --education-border-color: #2563eb;
+    --education-text-color: #172033;
 }
 
 body.dark {
-    --bg-color: #151515;
-    --text-color: #e8eaf6;
-    --accent-color: #0dcaf0;
-    --link-hover-color: #0bbbe0;
-    --primary-color: #e8eaf6;
+    --bg-color: #0f172a;
+    --surface-color: rgba(17, 24, 39, 0.86);
+    --surface-solid: #111827;
+    --surface-muted: #182235;
+    --text-color: #e5edf8;
+    --muted-text: #a6b3c7;
+    --accent-color: #38bdf8;
+    --accent-strong: #0ea5e9;
+    --accent-soft: rgba(56, 189, 248, 0.12);
+    --link-hover-color: #7dd3fc;
+    --primary-color: #f8fafc;
+    --border-color: rgba(226, 232, 240, 0.12);
+    --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.22);
+    --shadow-md: 0 18px 50px rgba(0, 0, 0, 0.32);
 
-    --btn-shine-text-color: #4e90ff;
-    --btn-shine-glow: rgba(78, 144, 255, 0.2);
+    --btn-shine-text-color: #7dd3fc;
+    --btn-shine-glow: rgba(255, 255, 255, 0.42);
 
-    --navbar-bg-color: #151515;
+    --navbar-bg-color: rgba(15, 23, 42, 0.86);
     --navbar-text-color: #e8eaf6;
-    --navbar-accent-color: #0dcaf0;
-    --navbar-active-color: #0dcaf0;
-    --navbar-hover-shadow: rgba(13, 202, 240, 0.8);
-    --theme-icon-hover-bg: rgba(255, 255, 255, 0.15);
-    --navbar-dropdown-bg: #1e1e1e;
+    --navbar-accent-color: #38bdf8;
+    --navbar-active-color: #38bdf8;
+    --navbar-hover-shadow: rgba(56, 189, 248, 0.24);
+    --theme-icon-hover-bg: rgba(56, 189, 248, 0.14);
+    --navbar-dropdown-bg: rgba(17, 24, 39, 0.98);
 
     --skills-heading-color: #ffffff;
-    --skills-text-color: #cccccc;
-    --skills-card-bg: #222222;
-    --skills-card-border: #444444;
-    --skills-card-hover-border: #666666;
-    --skills-card-shadow: rgba(0, 0, 0, 0.3);
-    --skills-card-bg-alt: #333333;
+    --skills-text-color: #cbd5e1;
+    --skills-card-bg: #111827;
+    --skills-card-border: rgba(226, 232, 240, 0.12);
+    --skills-card-hover-border: rgba(56, 189, 248, 0.32);
+    --skills-card-shadow: rgba(0, 0, 0, 0.32);
+    --skills-card-bg-alt: rgba(17, 24, 39, 0.88);
 
-    --proj-card-bg: #1e1e1e;
-    --proj-shadow: rgba(0, 0, 0, 0.5);
+    --proj-card-bg: #111827;
+    --proj-shadow: rgba(0, 0, 0, 0.28);
 
-    --proj-title-color: #fff;
-    --proj-desc-color: #ccc;
+    --proj-title-color: #f8fafc;
+    --proj-desc-color: #a6b3c7;
 
-    --proj-link-color: #4e90ff;
-    --proj-link-hover: #006cbd;
+    --proj-link-color: #7dd3fc;
+    --proj-link-hover: #38bdf8;
 
-    --tag-bg: #2d2d2d;
-    --tag-text: #c0c0c0;
-    --tag-border: #444;
-    --tag-hover-bg: #444;
-    --tag-hover-text: #fff;
+    --tag-bg: rgba(56, 189, 248, 0.12);
+    --tag-text: #bae6fd;
+    --tag-border: rgba(56, 189, 248, 0.22);
+    --tag-hover-bg: rgba(56, 189, 248, 0.18);
+    --tag-hover-text: #f8fafc;
 
-    --btn-bg: #ff0050;
-    --btn-text: #fff;
-    --btn-hover-bg: #e60045;
+    --btn-bg: #38bdf8;
+    --btn-text: #082f49;
+    --btn-hover-bg: #0ea5e9;
 
-    --img-strip-bg: #caccd1;
-    --img-strip-hover: #4e90ff;
+    --img-strip-bg: #1e293b;
+    --img-strip-hover: #38bdf8;
 
-    --achieve-bg: #333;
-    --achieve-border: #00ffff;
-    --achieve-accent: #00ffff;
-    --achieve-border-hover: #00ffff;
-    --achieve-link-hover: #ff6347;
+    --achieve-bg: rgba(17, 24, 39, 0.88);
+    --achieve-border: #38bdf8;
+    --achieve-accent: #5eead4;
+    --achieve-border-hover: #7dd3fc;
+    --achieve-link-hover: #7dd3fc;
     --achieve-highlight1: #34d399;
-    --achieve-highlight2: #ffd700;
-    --link-normal: #58a0ec;
+    --achieve-highlight2: #7dd3fc;
+    --link-normal: #7dd3fc;
 
-    --education-bg-color: #1e1e1e;
+    --education-bg-color: #111827;
+    --education-heading-color: #f8fafc;
+    --education-border-color: #38bdf8;
+    --education-text-color: #e5edf8;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1001;
+    background:
+        radial-gradient(
+            circle at top left,
+            var(--accent-soft),
+            transparent 34rem
+        ),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.32), transparent 18rem);
+}
+
+body.dark::before {
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(56, 189, 248, 0.12),
+            transparent 34rem
+        ),
+        linear-gradient(180deg, rgba(15, 23, 42, 0.28), transparent 18rem);
+}
+
+a {
+    color: inherit;
+}
+
+::selection {
+    background: var(--accent-soft);
+    color: var(--text-color);
+}
+
+.shine-button,
+.btn,
+.contact-form button,
+.scroll-to-top-btn {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
 }
 
 .shine-button {
-    position: relative;
-    overflow: hidden;
     padding: 0.75rem 2rem;
     font-size: 1rem;
     color: var(--btn-shine-text-color);
-    border: none;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     cursor: pointer;
     z-index: 0;
     transition:
         color 0.3s,
         border-color 0.3s;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.02);
 }
 
-.shine-button::before {
+.shine-button::before,
+.btn::before,
+.contact-form button::before,
+.scroll-to-top-btn::before {
     content: "";
     position: absolute;
     top: 0;
-    left: -100%;
-    width: 30%;
+    left: -75%;
+    width: 42%;
     height: 100%;
     background: linear-gradient(
         120deg,
@@ -174,7 +253,7 @@ body {
         rgba(255, 255, 255, 0) 100%
     );
     transform: skewX(-20deg);
-    animation: shine 2s linear infinite;
+    animation: shine 2.4s ease-in-out infinite;
     pointer-events: none;
     z-index: 1;
     will-change: left;
