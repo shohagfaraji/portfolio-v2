@@ -12,7 +12,6 @@ import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton.
 import CodingProfilesSection from "./components/CodingProfiles/CodingProfiles.jsx";
 import Experience from "./components/Experience/Experience.jsx";
 import Form from "./components/Form/Form.jsx";
-import TapeSection from "./components/Tape/TapeSection.jsx";
 import BackgroundParticles from "./components/BackgroundEffect/BackgroundParticles.jsx";
 import LoadingScreen from "./components/LoadingScreen/LoadingScreen.jsx";
 

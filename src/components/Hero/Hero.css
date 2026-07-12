@@ -17,8 +17,7 @@
     --hero-title-gradient-secondary: linear-gradient(90deg, #1d4ed8, #0f766e);
 
     --hero-button-border-color: var(--border-color);
-    /* --hero-button-text: var(--primary-color); */
-    --hero-button-text: #1e56cf;
+    --hero-button-text: var(--primary-color);
     --hero-button-fill: #2563eb;
     --hero-button-fill-text: #ffffff;
 }

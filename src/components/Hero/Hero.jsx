@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Hero.css";
 import { motion } from "framer-motion";
 import TechGlobe from "../TechGlobe/TechGlobe.jsx";
+import { RESUME_URL } from "../../config/links";
 
 const TypingEffect = ({ text, speed, loop }) => {
     const [displayedText, setDisplayedText] = useState("");
@@ -101,10 +102,8 @@ const HeroSection = () => {
                         animate={{ opacity: isInView ? 1 : 0 }}
                         transition={{ duration: 1.5 }}
                     >
-                        Computer Science graduate, Codeforces Pupil, and
-                        competitive programmer with 2200+ solved problems,
-                        focused on building reliable software through strong
-                        problem-solving.
+                        Solved over 2200 problems on Codeforces (Pupil).
+                        Interested in Building and Exploring Technology
                     </motion.p>
 
                     <motion.div
@@ -114,7 +113,7 @@ const HeroSection = () => {
                         transition={{ duration: 1.7 }}
                     >
                         <a
-                            href="https://drive.google.com/drive/folders/1tyc-BUoseWXr5AbAJv8skPZkHeJI7WJm?usp=sharing"
+                            href={RESUME_URL}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="join-button shine-button"
@@ -125,7 +124,7 @@ const HeroSection = () => {
                             href="mailto:shohagfaraji2@gmail.com"
                             className="contact-link shine-button"
                         >
-                            Contact Me
+                            Mail Me
                         </a>
                     </motion.div>
                 </div>

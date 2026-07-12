@@ -14,11 +14,11 @@ import nwu from "../../assets/contests/nwu-1.webp";
 
 const achievementsData = [
     {
-        date: "Jul 2026",
+        date: "Jun 2026",
         title: "ICPC JRC Scholarship",
         category: "Scholarship",
         details:
-            "Selected for the ICPC JRC Scholarship in 6 consecutive semesters for contest performance, funded by the ICPC Foundation.",
+            "Received the ICPC JRC Scholarship across consecutive award cycles. The program awards two students each semester and is arranged annually.",
         meta: "Also awarded in May 2025 and Sep 2024",
     },
     {
@@ -54,7 +54,7 @@ const achievementsData = [
     },
     {
         date: "Jan 2024",
-        title: "Best UAP Team Award - IUCPC 2024",
+        title: "Best UAP Team",
         category: "Programming Contest",
         details:
             "Recognized as the Best UAP Team in the Inter-University Collaborative Programming Contest 2024.",

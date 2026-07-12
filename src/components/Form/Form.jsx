@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Form.css";
-import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
 
 const Form = () => {
