@@ -17,14 +17,22 @@ const AboutMe = () => {
                         <i className="fa-regular fa-user"></i> About Me
                     </h1>
                     <p>
-                        Hi, I'm <b className="about-name">Shohag</b>. I am a
-                        competitive programmer and a computer science graduate.
-                        I am a Pupil on Codeforces and have participated in over
-                        8 Inter-University Programming Contests (IUPCs) as well
-                        as ICPC. I also conduct competitive programming classes
-                        for juniors at my university. I am passionate about
-                        solving problems through code and building impactful
-                        software solutions.
+                        Hi, I'm <b className="about-name">Shohag Faraji</b>, a
+                        Computer Science graduate, competitive programmer, and
+                        aspiring software engineer with a strong foundation in
+                        algorithms, data structures, and full-stack development.
+                        I am a Codeforces Pupil, have solved 2200+ programming
+                        problems, and have represented my university in ICPC and
+                        multiple Inter-University Programming Contests.
+                    </p>
+                    <p>
+                        Alongside competitive programming, I build web
+                        applications with technologies such as Django REST
+                        Framework and the MERN stack. I also mentor junior
+                        students through programming classes, helping them
+                        strengthen their problem-solving skills. My goal is to
+                        build reliable, user-focused software by combining
+                        analytical thinking with practical engineering.
                     </p>
                 </motion.div>
                 <motion.div
