@@ -1,32 +1,51 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { getEnvValue } from "../../config/env";
 import "./CodingProfiles.css";
 
 const CodingProfilesSection = () => {
     const codingProfiles = [
         {
             link: "https://leetcode.com/u/shohagfaraji/",
-            icon: "https://cdn-1.webcatalog.io/catalog/leetcode/leetcode-social-preview.png?v=1714774949349",
+            icon: getEnvValue(
+                "REACT_APP_CODING_PROFILE_LEETCODE_ICON_URL",
+                "https://cdn-1.webcatalog.io/catalog/leetcode/leetcode-social-preview.png?v=1714774949349",
+            ),
         },
         {
             link: "https://codeforces.com/profile/cse",
-            icon: "https://cdn-1.webcatalog.io/catalog/codeforces/codeforces-social-preview.png?v=1714773964567",
+            icon: getEnvValue(
+                "REACT_APP_CODING_PROFILE_CODEFORCES_ICON_URL",
+                "https://cdn-1.webcatalog.io/catalog/codeforces/codeforces-social-preview.png?v=1714773964567",
+            ),
         },
         {
             link: "https://github.com/shohagfaraji/",
-            icon: "https://i.postimg.cc/SNdDxxc2/github.jpg",
+            icon: getEnvValue(
+                "REACT_APP_CODING_PROFILE_GITHUB_ICON_URL",
+                "https://i.postimg.cc/SNdDxxc2/github.jpg",
+            ),
         },
         {
             link: "https://atcoder.jp/users/shohagfaraji",
-            icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZOKfQMWgupGFJsJbrlHLt3oea4hmgg6Qq-g&s",
+            icon: getEnvValue(
+                "REACT_APP_CODING_PROFILE_ATCODER_ICON_URL",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZOKfQMWgupGFJsJbrlHLt3oea4hmgg6Qq-g&s",
+            ),
         },
         {
             link: "https://www.codechef.com/users/shohagfaraji",
-            icon: "https://pbs.twimg.com/profile_images/1477930785537605633/ROTVNVz7_400x400.jpg",
+            icon: getEnvValue(
+                "REACT_APP_CODING_PROFILE_CODECHEF_ICON_URL",
+                "https://pbs.twimg.com/profile_images/1477930785537605633/ROTVNVz7_400x400.jpg",
+            ),
         },
         {
             link: "https://www.geeksforgeeks.org/user/shohagfaraji/?ref=header_profile",
-            icon: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png",
+            icon: getEnvValue(
+                "REACT_APP_CODING_PROFILE_GFG_ICON_URL",
+                "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png",
+            ),
         },
     ];
 

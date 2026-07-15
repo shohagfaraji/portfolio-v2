@@ -4,7 +4,6 @@ import Projectitem from "./Projectitem.jsx";
 import { PROJECTS } from "../../assets/projects";
 import { DEPLOY_LINKS } from "../../config/links";
 import thesis_1 from "../../assets/projects/thesis-sample.webp";
-import ecommerce_django_react from "../../assets/projects/ecommerce.webp";
 import national_martyrs_monument from "../../assets/projects/national-martyrs-monument.webp";
 import traffic_system from "../../assets/projects/traffic-system.webp";
 
@@ -31,7 +30,7 @@ const Project = () => {
                 "Developed a full-stack e-commerce platform featuring JWT authentication, product management, shopping cart, and order processing using Django REST Framework, React, PostgreSQL, and Tailwind CSS.",
             languages:
                 "JavaScript | Python | Django REST Framework | React | Tailwind CSS | PostgreSQL",
-            image: ecommerce_django_react,
+            image: PROJECTS.ecommerce.image,
             video: PROJECTS.ecommerce.video,
             projectType: "Project",
         },
@@ -42,8 +41,8 @@ const Project = () => {
             description:
                 "Developed a full-stack recipe blog application using the MERN stack, enabling users to create, edit, browse, and share recipes through a responsive web interface.",
             languages: "MongoDB | Express.js | React | Node.js",
-            image: PROJECTS.blank.image,
-            video: null,
+            image: PROJECTS.claypot.image,
+            video: PROJECTS.claypot.video,
             projectType: "Project",
         },
         {
