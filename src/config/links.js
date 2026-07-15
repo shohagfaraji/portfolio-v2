@@ -4,18 +4,18 @@ const getEnvLink = (key, fallback) => {
 };
 
 export const RESUME_URL = getEnvLink(
-    "RESUME_URL",
+    "REACT_APP_RESUME_URL",
     "https://drive.google.com/drive/folders/1tyc-BUoseWXr5AbAJv8skPZkHeJI7WJm?usp=sharing",
 );
 
 export const DEPLOY_LINKS = {
     fallDetection: getEnvLink(
-        "FALL_DETECTION_URL",
-        "https://www.linkedin.com/feed/update/urn:li:activity:7401675334401892352/",
+        "REACT_APP_FALL_DETECTION_DEPLOY_URL",
+        "https://drive.google.com/file/d/1GU_vjUQroNSZIp4hhGGMNORGwB2vAfj2/view?usp=sharing",
     ),
     ecommerce: getEnvLink(
         "REACT_APP_ECOMMERCE_DEPLOY_URL",
-        "https://voltedgeshop.netlify.app/",
+        "https://winkelo.netlify.app/",
     ),
     copeforces: getEnvLink(
         "REACT_APP_COPEFORCES_DEPLOY_URL",
@@ -23,14 +23,14 @@ export const DEPLOY_LINKS = {
     ),
     recipeBlog: getEnvLink(
         "REACT_APP_RECIPE_BLOG_DEPLOY_URL",
-        "https://github.com/shohagfaraji/food-recipe-mern",
+        "https://claypot.netlify.app/",
     ),
     graphicsLab: getEnvLink(
-        "GRAPHICS_LAB_URL",
+        "REACT_APP_GRAPHICS_LAB_DEPLOY_URL",
         "https://www.youtube.com/playlist?list=PLxi-FW-37nrXWuxjpmq0iJrB9EfK4loiw",
     ),
     dlsdProject: getEnvLink(
-        "DLSD_PROJECT_URL",
+        "REACT_APP_DLSD_PROJECT_DEPLOY_URL",
         "https://github.com/shohagfaraji/dlsd-lab-final-project/tree/main/videos",
     ),
 };

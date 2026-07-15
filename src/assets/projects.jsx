@@ -6,7 +6,7 @@ export const PROJECTS = {
 
     thesis_1: {
         image: "https://i.postimg.cc/FKr43pB0/thesis-sample.png",
-        video: "https://res.cloudinary.com/shohagfaraji/video/upload/v1779376694/thesis.mp4",
+        video: "https://res.cloudinary.com/shohagfaraji/video/upload/v1784129546/Output_Fall_Detection_in_Surveillance_Systems_zpd35z.mp4",
     },
 
     copeforces: {

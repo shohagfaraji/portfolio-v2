@@ -98,6 +98,19 @@ body {
     --education-heading-color: #172033;
     --education-border-color: #2563eb;
     --education-text-color: #172033;
+
+    --video-modal-backdrop: rgba(15, 23, 42, 0.42);
+    --video-modal-bg: #ffffff;
+    --video-modal-border: rgba(37, 99, 235, 0.22);
+    --video-modal-header-bg: rgba(255, 255, 255, 0.96);
+    --video-modal-header-border: rgba(23, 32, 51, 0.1);
+    --video-modal-title: #172033;
+    --video-modal-icon: #0f172a;
+    --video-modal-icon-hover-bg: rgba(15, 23, 42, 0.12);
+    --video-modal-controls-bg: rgba(255, 255, 255, 0.82);
+    --video-modal-time: #172033;
+    --video-modal-track: rgba(23, 32, 51, 0.22);
+    --video-modal-close-hover: #dc2626;
 }
 
 body.dark {
@@ -170,6 +183,19 @@ body.dark {
     --education-heading-color: #f8fafc;
     --education-border-color: #38bdf8;
     --education-text-color: #e5edf8;
+
+    --video-modal-backdrop: rgba(2, 6, 23, 0.76);
+    --video-modal-bg: #0b1120;
+    --video-modal-border: rgba(125, 211, 252, 0.32);
+    --video-modal-header-bg: rgba(15, 23, 42, 0.98);
+    --video-modal-header-border: rgba(255, 255, 255, 0.12);
+    --video-modal-title: #ffffff;
+    --video-modal-icon: #cbd5e1;
+    --video-modal-icon-hover-bg: rgba(255, 255, 255, 0.12);
+    --video-modal-controls-bg: rgba(31, 29, 54, 0.84);
+    --video-modal-time: #ffffff;
+    --video-modal-track: rgba(255, 255, 255, 0.32);
+    --video-modal-close-hover: #ffffff;
 }
 
 body {

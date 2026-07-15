@@ -11,6 +11,42 @@ import traffic_system from "../../assets/projects/traffic-system.webp";
 const Project = () => {
     const projectData = [
         {
+            sourceCodeLink: "https://github.com/shohagfaraji/copeforces",
+            deployedLink: DEPLOY_LINKS.copeforces,
+            name: "CopeForces | Problem Solving Toolkit",
+            description:
+                "Developed a web-based competitive programming toolkit used by competitive programmers from 40+ countries, featuring 80+ interactive tools for online contests including debugging utilities, graph and tree visualizers, number theory tools, and implementations of common data structures and algorithms.",
+            languages:
+                "React | JavaScript | Tailwind CSS | HTML | CSS | Data Structures & Algorithms | Competitive Programming",
+            image: PROJECTS.copeforces.image,
+            video: PROJECTS.copeforces.video,
+            projectType: "Project",
+        },
+        {
+            sourceCodeLink:
+                "https://github.com/shohagfaraji/react-django-ecommerce",
+            deployedLink: DEPLOY_LINKS.ecommerce,
+            name: "Winkelo | Full-Stack E-Commerce Platform",
+            description:
+                "Developed a full-stack e-commerce platform featuring JWT authentication, product management, shopping cart, and order processing using Django REST Framework, React, PostgreSQL, and Tailwind CSS.",
+            languages:
+                "JavaScript | Python | Django REST Framework | React | Tailwind CSS | PostgreSQL",
+            image: ecommerce_django_react,
+            video: PROJECTS.ecommerce.video,
+            projectType: "Project",
+        },
+        {
+            sourceCodeLink: "https://github.com/shohagfaraji/food-recipe-mern",
+            deployedLink: DEPLOY_LINKS.recipeBlog,
+            name: "Claypot | Full-Stack Recipe Sharing Platform",
+            description:
+                "Developed a full-stack recipe blog application using the MERN stack, enabling users to create, edit, browse, and share recipes through a responsive web interface.",
+            languages: "MongoDB | Express.js | React | Node.js",
+            image: PROJECTS.blank.image,
+            video: null,
+            projectType: "Project",
+        },
+        {
             sourceCodeLink:
                 "https://github.com/shohagfaraji/Fall-Detection-in-Surveillance-Systems-Using-YOLO-and-Pose-Based-Analysis",
             deployedLink: DEPLOY_LINKS.fallDetection,
@@ -22,42 +58,6 @@ const Project = () => {
             image: thesis_1,
             video: PROJECTS.thesis_1.video,
             projectType: "Thesis",
-        },
-        {
-            sourceCodeLink:
-                "https://github.com/shohagfaraji/react-django-ecommerce",
-            deployedLink: DEPLOY_LINKS.ecommerce,
-            name: "Full-Stack E-Commerce Web Application",
-            description:
-                "A full-stack e-commerce web application built as a learning project using Django and React. The application features user authentication, product management, shopping cart functionality, and order processing, backed by a PostgreSQL database (managed via pgAdmin 4) and a responsive UI built with Tailwind CSS.",
-            languages:
-                "JavaScript | Python | Django REST Framework | React | Tailwind CSS | PostgreSQL",
-            image: ecommerce_django_react,
-            video: PROJECTS.ecommerce.video,
-            projectType: "Project",
-        },
-        {
-            sourceCodeLink: "https://github.com/shohagfaraji/copeforces",
-            deployedLink: DEPLOY_LINKS.copeforces,
-            name: "CopeForces - Competitive Programming Toolkit",
-            description:
-                "A competitive programming companion built to save time during online contests like Codeforces. It provides contest utilities, debugging tools, string and number theory utilities, tree and graph visualizers, and interactive implementations of popular data structures and algorithms in a single web application.",
-            languages:
-                "React | JavaScript | Tailwind CSS | HTML | CSS | Data Structures & Algorithms | Competitive Programming",
-            image: PROJECTS.copeforces.image,
-            video: PROJECTS.copeforces.video,
-            projectType: "Project",
-        },
-        {
-            sourceCodeLink: "https://github.com/shohagfaraji/food-recipe-mern",
-            deployedLink: DEPLOY_LINKS.recipeBlog,
-            name: "Full-Stack Recipe Blog Application",
-            description:
-                "A full-stack recipe blog application built with the MERN stack.",
-            languages: "MongoDB | Express.js | React | Node.js",
-            image: PROJECTS.blank.image,
-            video: null,
-            projectType: "Project",
         },
         {
             sourceCodeLink:
