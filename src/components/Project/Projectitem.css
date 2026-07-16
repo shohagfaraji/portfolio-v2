@@ -303,8 +303,11 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 45%;
     min-width: 4rem;
     height: 4rem;
+    transform: translateY(-50%);
     border-radius: 50%;
     background: rgba(15, 23, 42, 0.62);
     color: #ffffff;
@@ -667,44 +670,119 @@ body.dark .video-fullscreen-button {
 
 @media (max-width: 640px) {
     .video-viewer-backdrop {
-        align-items: flex-end;
+        align-items: center;
         padding: 0.75rem;
     }
 
     .video-viewer {
+        width: calc(100vw - 1.5rem);
+        max-height: 84vh;
         border-radius: 14px;
-        max-height: 78vh;
+    }
+
+    .video-viewer-header {
+        gap: 0.75rem;
+        padding: 0.68rem 0.72rem 0.68rem 0.85rem;
+    }
+
+    .video-viewer-header h3 {
+        font-size: clamp(0.86rem, 4vw, 1rem);
     }
 
     .video-bottom-controls {
-        grid-template-columns: 3rem minmax(0, 1fr) 3rem auto;
-        gap: 0.38rem;
-        padding: 0.72rem;
+        grid-template-columns: 2.65rem minmax(0, 1fr) 2.65rem 2rem;
+        gap: 0.34rem;
+        padding: 0.58rem 0.62rem;
     }
 
     .video-time {
-        font-size: 0.74rem;
+        font-size: 0.72rem;
     }
 
     .video-small-button {
         height: 2rem;
+        width: 2rem;
         min-width: 2rem;
+        border-radius: 8px;
     }
 
-    .video-small-button svg {
-        width: 1.12rem;
-        height: 1.12rem;
+    .video-fullscreen-corners {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .video-fullscreen-corners span {
+        width: 0.36rem;
+        height: 0.36rem;
+    }
+
+    .video-center-controls {
+        top: 45%;
+        gap: clamp(0.7rem, 5vw, 1.1rem);
     }
 
     .video-seek-feedback span {
+        top: 45%;
         min-width: 3.2rem;
         height: 3.2rem;
         font-size: 0.9rem;
     }
+
+    .video-seek-button {
+        width: 3.2rem;
+        height: 3.2rem;
+        min-width: 3.2rem;
+    }
+
+    .video-seek-button svg {
+        width: 2.35rem;
+        height: 2.35rem;
+    }
+
+    .video-play-button {
+        width: 3.55rem;
+        height: 3.55rem;
+        min-width: 3.55rem;
+    }
+
+    .video-play-button svg {
+        width: 2.05rem;
+        height: 2.05rem;
+    }
+
+    .project-card {
+        max-width: none;
+        border-radius: 14px;
+    }
+
+    .project-details {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .project-title {
+        font-size: 1.05rem;
+    }
+
+    .project-desc {
+        text-align: left;
+    }
+
+    .tech-tags,
+    .project-buttons {
+        justify-content: center;
+    }
+
+    .project-buttons {
+        gap: 0.65rem;
+    }
 }
 
 @media (hover: none) {
-    .video-center-controls,
+    .video-center-controls {
+        opacity: 1;
+    }
+
     .video-bottom-controls {
         opacity: 1;
         transform: none;

@@ -10,29 +10,29 @@ const skillGroups = [
             {
                 name: "JavaScript",
                 logoUrl: getEnvValue(
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                     "REACT_APP_SKILL_LOGO_JAVASCRIPT_URL",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
                 ),
             },
             {
                 name: "Python",
                 logoUrl: getEnvValue(
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
                     "REACT_APP_SKILL_LOGO_PYTHON_URL",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
                 ),
             },
             {
                 name: "Java",
                 logoUrl: getEnvValue(
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
                     "REACT_APP_SKILL_LOGO_JAVA_URL",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
                 ),
             },
             {
                 name: "C++",
                 logoUrl: getEnvValue(
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
                     "REACT_APP_SKILL_LOGO_CPP_URL",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
                 ),
             },
         ],
@@ -43,36 +43,36 @@ const skillGroups = [
             {
                 name: "React",
                 logoUrl: getEnvValue(
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                     "REACT_APP_SKILL_LOGO_REACT_URL",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
                 ),
             },
             {
                 name: "HTML",
                 logoUrl: getEnvValue(
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
                     "REACT_APP_SKILL_LOGO_HTML_URL",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
                 ),
             },
             {
                 name: "CSS",
                 logoUrl: getEnvValue(
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
                     "REACT_APP_SKILL_LOGO_CSS_URL",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
                 ),
             },
             {
                 name: "Tailwind CSS",
                 logoUrl: getEnvValue(
-                    "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
                     "REACT_APP_SKILL_LOGO_TAILWIND_URL",
+                    "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
                 ),
             },
             {
-                name: "Bootstrap",
+                name: "shadcn/ui",
                 logoUrl: getEnvValue(
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-                    "REACT_APP_SKILL_LOGO_BOOTSTRAP_URL",
+                    "REACT_APP_SKILL_LOGO_SHADCN_URL",
+                    "https://avatars.githubusercontent.com/u/139895814?s=200&v=4",
                 ),
             },
         ],
@@ -81,17 +81,31 @@ const skillGroups = [
         title: "Backend",
         skills: [
             {
+                name: "Node.js",
+                logoUrl: getEnvValue(
+                    "REACT_APP_SKILL_LOGO_NODEJS_URL",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+                ),
+            },
+            {
                 name: "Express",
                 logoUrl: getEnvValue(
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
                     "REACT_APP_SKILL_LOGO_EXPRESS_URL",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
                 ),
             },
             {
                 name: "Django REST Framework",
                 logoUrl: getEnvValue(
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
                     "REACT_APP_SKILL_LOGO_DJANGO_URL",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+                ),
+            },
+            {
+                name: "FastAPI",
+                logoUrl: getEnvValue(
+                    "REACT_APP_SKILL_LOGO_FASTAPI_URL",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
                 ),
             },
         ],
@@ -102,22 +116,22 @@ const skillGroups = [
             {
                 name: "MongoDB",
                 logoUrl: getEnvValue(
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
                     "REACT_APP_SKILL_LOGO_MONGODB_URL",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
                 ),
             },
             {
                 name: "MySQL",
                 logoUrl: getEnvValue(
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
                     "REACT_APP_SKILL_LOGO_MYSQL_URL",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
                 ),
             },
             {
                 name: "PostgreSQL",
                 logoUrl: getEnvValue(
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
                     "REACT_APP_SKILL_LOGO_POSTGRESQL_URL",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
                 ),
             },
         ],
@@ -128,22 +142,22 @@ const skillGroups = [
             {
                 name: "Git",
                 logoUrl: getEnvValue(
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
                     "REACT_APP_SKILL_LOGO_GIT_URL",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
                 ),
             },
             {
                 name: "GitHub",
                 logoUrl: getEnvValue(
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
                     "REACT_APP_SKILL_LOGO_GITHUB_URL",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
                 ),
             },
             {
                 name: "VS Code",
                 logoUrl: getEnvValue(
-                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
                     "REACT_APP_SKILL_LOGO_VSCODE_URL",
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
                 ),
             },
         ],

@@ -61,10 +61,8 @@ const Projectitem = (props) => {
 
         const viewportWidth = window.innerWidth;
         const viewportHeight = window.innerHeight;
-        const availableWidth = Math.max(
-            viewportWidth - VIEWER_PADDING * 2,
-            280,
-        );
+        const viewerPadding = viewportWidth <= 640 ? 12 : VIEWER_PADDING;
+        const availableWidth = Math.max(viewportWidth - viewerPadding * 2, 280);
         const maxHeight = Math.min(viewportHeight * 0.92, VIEWER_MAX_HEIGHT);
         let width = Math.min(VIEWER_MAX_WIDTH, availableWidth);
         let videoHeight = (width * 9) / 16;
