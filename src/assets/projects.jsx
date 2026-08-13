@@ -4,7 +4,7 @@ export const PROJECTS = {
     ecommerce: {
         image: getEnvValue(
             "REACT_APP_PROJECT_ECOMMERCE_IMAGE_URL",
-            "https://i.postimg.cc/K8ktK5M4/winkelo.png",
+            "https://res.cloudinary.com/shohagfaraji/image/upload/v1786610193/winkelo-1_vung4t.webp"
         ),
         video: getEnvValue(
             "REACT_APP_PROJECT_ECOMMERCE_VIDEO_URL",
@@ -15,7 +15,7 @@ export const PROJECTS = {
     thesis_1: {
         image: getEnvValue(
             "REACT_APP_PROJECT_FALL_DETECTION_IMAGE_URL",
-            "https://i.postimg.cc/FKr43pB0/thesis-sample.png",
+            "https://res.cloudinary.com/shohagfaraji/image/upload/v1786610607/thesis-sample_eeyzb1.webp",
         ),
         video: getEnvValue(
             "REACT_APP_PROJECT_FALL_DETECTION_VIDEO_URL",
@@ -26,7 +26,7 @@ export const PROJECTS = {
     copeforces: {
         image: getEnvValue(
             "REACT_APP_PROJECT_COPEFORCES_IMAGE_URL",
-            "https://i.postimg.cc/pTjrqG5t/Cope-Forces.png",
+            "https://res.cloudinary.com/shohagfaraji/image/upload/v1786610607/Cope-Forces_lifw0k.webp",
         ),
         video: getEnvValue(
             "REACT_APP_PROJECT_COPEFORCES_VIDEO_URL",
@@ -37,7 +37,7 @@ export const PROJECTS = {
     claypot: {
         image: getEnvValue(
             "REACT_APP_PROJECT_CLAYPOT_IMAGE_URL",
-            "https://i.postimg.cc/Xq859Hjv/claypot.png",
+            "https://res.cloudinary.com/shohagfaraji/image/upload/v1786610193/claypot_y8nnv5.webp",
         ),
         video: getEnvValue("REACT_APP_PROJECT_CLAYPOT_VIDEO_URL", null),
     },
@@ -45,7 +45,7 @@ export const PROJECTS = {
     blank: {
         image: getEnvValue(
             "REACT_APP_PROJECT_BLANK_IMAGE_URL",
-            "https://i.postimg.cc/bJsN2PCy/blank.png",
+            "https://res.cloudinary.com/shohagfaraji/image/upload/v1786610607/blank_un5mlg.webp",
         ),
         video: getEnvValue("REACT_APP_PROJECT_BLANK_VIDEO_URL", null),
     },
@@ -53,7 +53,7 @@ export const PROJECTS = {
     national_martyrs_monument: {
         image: getEnvValue(
             "REACT_APP_PROJECT_NATIONAL_MARTYRS_MONUMENT_IMAGE_URL",
-            "https://i.postimg.cc/k44B2dzL/national-martyrs-monument.png",
+            "https://res.cloudinary.com/shohagfaraji/image/upload/v1786610607/national-martyrs-monument_gr3ywd.webp",
         ),
         video: getEnvValue(
             "REACT_APP_PROJECT_NATIONAL_MARTYRS_MONUMENT_VIDEO_URL",
@@ -64,7 +64,7 @@ export const PROJECTS = {
     traffic_system: {
         image: getEnvValue(
             "REACT_APP_PROJECT_TRAFFIC_SYSTEM_IMAGE_URL",
-            "https://i.postimg.cc/RFDqfDzV/traffic-system.png",
+            "https://res.cloudinary.com/shohagfaraji/image/upload/v1786610608/traffic-system_jpniyq.webp",
         ),
         video: getEnvValue("REACT_APP_PROJECT_TRAFFIC_SYSTEM_VIDEO_URL", null),
     },
