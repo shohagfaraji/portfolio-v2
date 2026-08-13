@@ -68,4 +68,23 @@ export const PROJECTS = {
         ),
         video: getEnvValue("REACT_APP_PROJECT_TRAFFIC_SYSTEM_VIDEO_URL", null),
     },
+
+    hfr24: {
+        image: getEnvValue(
+            "REACT_APP_PROJECT_HFR24_IMAGE_URL",
+            "https://res.cloudinary.com/shohagfaraji/image/upload/v1786626377/cse316_peripheral_and_interfacing_lab_project_bhzsib.webp",
+        ),
+        video: getEnvValue("REACT_APP_PROJECT_HFR24_VIDEO_URL", null),
+    },
+
+    mini_c_compiler: {
+        image: getEnvValue(
+            "REACT_APP_PROJECT_MINI_C_COMPILER_IMAGE_URL",
+            "https://placehold.co/1200x675?text=Mini-C+Compiler",
+        ),
+        video: getEnvValue(
+            "REACT_APP_PROJECT_MINI_C_COMPILER_VIDEO_URL",
+            null,
+        ),
+    },
 };

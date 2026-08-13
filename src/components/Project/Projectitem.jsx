@@ -764,28 +764,34 @@ const Projectitem = (props) => {
                             </span>
                         )}
                     </p>
-                    <div className="project-buttons">
-                        <motion.a
-                            href={sourceCodeLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn btn-code shine-button"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            GitHub
-                        </motion.a>
-                        <motion.a
-                            href={deployedLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn btn-live shine-button"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            Live Demo
-                        </motion.a>
-                    </div>
+                    {(sourceCodeLink || deployedLink) && (
+                        <div className="project-buttons">
+                            {sourceCodeLink && (
+                                <motion.a
+                                    href={sourceCodeLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn btn-code shine-button"
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                >
+                                    GitHub
+                                </motion.a>
+                            )}
+                            {deployedLink && (
+                                <motion.a
+                                    href={deployedLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn btn-live shine-button"
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                >
+                                    Live Demo
+                                </motion.a>
+                            )}
+                        </div>
+                    )}
                 </div>
             </motion.div>
             {videoViewer}

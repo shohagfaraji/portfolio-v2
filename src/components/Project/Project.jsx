@@ -60,18 +60,6 @@ const Project = () => {
         },
         {
             sourceCodeLink:
-                "https://github.com/shohagfaraji/computer-graphics-lab-works",
-            deployedLink: DEPLOY_LINKS.graphicsLab,
-            name: "CSE 426: Computer Graphics Lab",
-            description:
-                "A collection of creative graphics programs developed as part of the Computer Graphics Lab course. The project includes custom-designed scenes such as the National Martyrs' Monument and other illustrative diagrams. Implemented using core graphics concepts including transformations, drawing algorithms, and user interaction, with a final project showcasing advanced rendering and scene composition.",
-            languages: "C++ | OpenGL | Glut | Data Structures | Algorithms",
-            image: national_martyrs_monument,
-            video: null,
-            projectType: "Personal Project",
-        },
-        {
-            sourceCodeLink:
                 "https://github.com/shohagfaraji/dlsd-lab-final-project",
             deployedLink: DEPLOY_LINKS.dlsdProject,
             name: "Winner - DLSD Lab Final Project",
@@ -82,6 +70,44 @@ const Project = () => {
             image: traffic_system,
             video: null,
             projectType: "Academic Project",
+        },
+        {
+            sourceCodeLink:
+                "https://github.com/shohagfaraji/autonomous-human-following-robot",
+            deployedLink: null,
+            name: "Autonomous Human-Following Robot (CSE 316)",
+            description:
+                "Developed an Arduino Uno-based robot that follows a person using an ultrasonic sensor and two IR sensors. An L293D motor driver controls its dual motors for real-time directional tracking and automatic stopping when the subject moves out of range. Built for the CSE 316 Peripheral & Interfacing Lab in Spring 2024, earning an A+ (GPA 4.00).",
+            languages:
+                "Arduino Uno | Embedded C/C++ | HC-SR04 | IR Sensors | L293D Motor Driver | PWM | Robotics",
+            image: PROJECTS.hfr24.image,
+            video: PROJECTS.hfr24.video,
+            projectType: "Academic Project • Peripheral & Interfacing Lab",
+        },
+        {
+            sourceCodeLink:
+                "https://github.com/shohagfaraji/computer-graphics-lab-works",
+            deployedLink: null,
+            name: "CSE 426: Computer Graphics Lab",
+            description:
+                "A collection of creative graphics programs developed as part of the Computer Graphics Lab course. The project includes custom-designed scenes such as the National Martyrs' Monument and other illustrative diagrams. Implemented using core graphics concepts including transformations, drawing algorithms, and user interaction, with a final project showcasing advanced rendering and scene composition.",
+            languages: "C++ | OpenGL | Glut | Data Structures | Algorithms",
+            image: national_martyrs_monument,
+            video: null,
+            projectType: "Personal Project",
+        },
+        {
+            sourceCodeLink:
+                "https://github.com/shohagfaraji/compiler-design-lab-works/tree/main/Mini-C-Compiler",
+            deployedLink: null,
+            name: "Mini-C-Compiler | Compiler Design Lab",
+            description:
+                "Developed a compiler for a subset of the C language using Flex and Bison. It performs lexical and syntax analysis, manages identifiers through a symbol table, builds an abstract syntax tree, and generates three-address intermediate code and assembly-style output.",
+            languages:
+                "C | Flex/Lex | Bison/Yacc | Compiler Design | Symbol Table | AST | Three-Address Code",
+            image: PROJECTS.mini_c_compiler.image,
+            video: PROJECTS.mini_c_compiler.video,
+            projectType: "Academic Project • Compiler Design Lab",
         },
     ];
 
