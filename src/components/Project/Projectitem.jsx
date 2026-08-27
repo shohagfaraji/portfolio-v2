@@ -123,9 +123,7 @@ const Projectitem = (props) => {
             const playPromise = previewVideoRef.current.play();
 
             if (playPromise !== undefined) {
-                playPromise.catch(() => {
-                    // Hover previews can be interrupted when the cursor leaves quickly.
-                });
+                playPromise.catch(() => {});
             }
         }
     };
@@ -289,7 +287,6 @@ const Projectitem = (props) => {
                 .then(() => setIsPlaying(true))
                 .catch(() => {
                     setIsPlaying(false);
-                    // Autoplay can be blocked until the user taps play.
                 });
         }
     };
@@ -352,9 +349,6 @@ const Projectitem = (props) => {
             clearTimeout(seekFrameRef.current);
         }
 
-        // Slider/label update instantly above. The actual video seek only
-        // commits every 80ms while dragging because real seeking has to locate
-        // a keyframe and decode forward.
         seekFrameRef.current = setTimeout(() => {
             seekTo(nextTime);
         }, 80);

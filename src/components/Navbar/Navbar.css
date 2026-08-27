@@ -176,7 +176,6 @@
     gap: 1rem;
 }
 
-/* Responsive layout */
 @media (max-width: 1300px) {
     .navbar {
         padding: 0.5rem 3rem;

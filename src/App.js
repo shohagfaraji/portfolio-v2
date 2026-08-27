@@ -32,12 +32,11 @@ function App() {
             <HeroSection />
             <AboutMe />
             <Skills />
-            <Experience />
             <Project />
-            {/* <TapeSection /> */}
-            <Achievement />
-            <Education />
             <CodingProfilesSection />
+            <Achievement />
+            <Experience />
+            <Education />
             <Form />
             <Contact />
             <ScrollToTopButton />

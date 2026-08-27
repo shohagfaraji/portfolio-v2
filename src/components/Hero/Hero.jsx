@@ -4,30 +4,22 @@ import { motion } from "framer-motion";
 import TechGlobe from "../TechGlobe/TechGlobe.jsx";
 import { RESUME_URL } from "../../config/links";
 
-const TypingEffect = ({ text, speed, loop }) => {
+const TypingEffect = ({ text, speed }) => {
     const [displayedText, setDisplayedText] = useState("");
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
-        // let timeout;
         const typeText = () => {
             if (index < text.length) {
                 setDisplayedText((prev) => prev + text[index]);
                 setIndex((prevIndex) => prevIndex + 1);
-            } else {
-                // if (loop) {
-                //     timeout = setTimeout(() => {
-                //         setDisplayedText("");
-                //         setIndex(0);
-                //     }, 2000);
-                // }
             }
         };
 
         const interval = setInterval(typeText, speed);
 
         return () => clearInterval(interval);
-    }, [index, text, speed, loop]);
+    }, [index, text, speed]);
 
     return <motion.span>{displayedText}</motion.span>;
 };
@@ -57,10 +49,6 @@ const HeroSection = () => {
 
     return (
         <div>
-            {/* <div className="availability-badge shine-button">
-                <div className="ping-dot" />
-                <p>Available for new projects</p>
-            </div> */}
             <div className="hero-section">
                 <div className="hero-content">
                     <motion.h1
@@ -78,7 +66,6 @@ const HeroSection = () => {
                         <TypingEffect
                             text="Hi, I am Shohag Faraji"
                             speed={200}
-                            loop={true}
                         />
                     </motion.h1>
 
@@ -129,14 +116,6 @@ const HeroSection = () => {
                     </motion.div>
                 </div>
                 <TechGlobe />
-                {/* <motion.div
-          className="hero-image"
-          initial={{ opacity: 0, scale: 0.4 }}
-          animate={{ opacity: isInView ? 1 : 0, scale: isInView ? 1 : 0.8 }}
-          transition={{ duration: 1, delay: 0.5 }}
-        >
-          <img draggable="false" src={heroImage} alt="Hero" />
-        </motion.div> */}
             </div>
         </div>
     );

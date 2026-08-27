@@ -11,6 +11,187 @@
     line-height: 1.15;
 }
 
+.coding-activity-card {
+    width: min(1120px, 100%);
+    margin: 0 auto;
+    padding: clamp(1.25rem, 3vw, 2rem);
+    text-align: left;
+    background: var(--surface-solid);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    box-shadow: var(--shadow-sm);
+}
+
+.coding-activity-intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.coding-activity-eyebrow {
+    display: inline-block;
+    margin-bottom: 0.45rem;
+    color: var(--accent-color);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.coding-activity-intro h3 {
+    color: var(--text-color);
+    font-size: clamp(1.45rem, 2.5vw, 2rem);
+    line-height: 1.2;
+}
+
+.coding-activity-intro p,
+.heatmap-heading p,
+.archive-note {
+    color: var(--muted-text);
+}
+
+.coding-activity-intro p {
+    margin-top: 0.5rem;
+}
+
+.coding-activity-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.65rem;
+}
+
+.coding-activity-actions a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.65rem 0.9rem;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    color: var(--text-color);
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.coding-activity-actions a:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.coding-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.85rem;
+    margin: 1.75rem 0;
+}
+
+.coding-stat {
+    padding: 1rem;
+    text-align: center;
+    background: var(--surface-muted);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+}
+
+.coding-stat strong,
+.coding-stat span {
+    display: block;
+}
+
+.coding-stat strong {
+    color: var(--accent-color);
+    font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+    line-height: 1.2;
+}
+
+.coding-stat span {
+    margin-top: 0.25rem;
+    color: var(--muted-text);
+    font-size: 0.86rem;
+    font-weight: 600;
+}
+
+.heatmap-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.85rem;
+}
+
+.heatmap-heading h4 {
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.heatmap-heading p {
+    font-size: 0.86rem;
+}
+
+.heatmap-tabs {
+    display: flex;
+    gap: 0.4rem;
+    padding: 0.3rem;
+    background: var(--surface-muted);
+    border-radius: 12px;
+}
+
+.heatmap-tabs button {
+    padding: 0.45rem 0.7rem;
+    border: 0;
+    border-radius: 9px;
+    color: var(--muted-text);
+    background: transparent;
+    font: inherit;
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.heatmap-tabs button:hover,
+.heatmap-tabs button.active {
+    color: var(--btn-text);
+    background: var(--btn-bg);
+}
+
+.heatmap-tabs button:focus-visible,
+.coding-activity-actions a:focus-visible {
+    outline: 3px solid var(--accent-soft);
+    outline-offset: 2px;
+}
+
+.heatmap-frame {
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-height: 170px;
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+}
+
+.heatmap-frame img {
+    display: block;
+    width: 100%;
+    min-width: 720px;
+    height: auto;
+    animation: heatmap-fade-in 0.25s ease-out;
+}
+
+.archive-note {
+    margin-top: 0.85rem;
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+@keyframes heatmap-fade-in {
+    from { opacity: 0.3; }
+    to { opacity: 1; }
+}
+
 .coding-profiles-container {
     display: flex;
     flex-wrap: wrap;
@@ -24,6 +205,7 @@
 .coding-profile-link {
     text-decoration: none;
     color: inherit;
+    text-align: center;
 }
 
 .coding-profile-icon {
@@ -45,4 +227,55 @@
 .coding-profile-link:hover .coding-profile-icon {
     transform: scale(1.05);
     box-shadow: var(--shadow-md);
+}
+
+.coding-profile-name {
+    display: block;
+    margin-top: 0.65rem;
+    color: var(--muted-text);
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+@media (max-width: 760px) {
+    .coding-profiles-section {
+        padding-inline: 5%;
+    }
+
+    .coding-activity-intro,
+    .heatmap-heading {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .coding-activity-actions {
+        justify-content: flex-start;
+    }
+
+    .coding-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .heatmap-tabs {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 480px) {
+    .coding-activity-card {
+        border-radius: 18px;
+    }
+
+    .coding-activity-actions a {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .heatmap-tabs {
+        width: 100%;
+    }
+
+    .heatmap-tabs button {
+        flex: 1;
+    }
 }

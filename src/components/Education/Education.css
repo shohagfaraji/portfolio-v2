@@ -104,14 +104,12 @@
     font-size: 0.7rem;
 }
 
-/* Tablet */
 @media (max-width: 1024px) {
     .education-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* Mobile */
 @media (max-width: 640px) {
     .education-section {
         padding: 40px 1rem 2rem 1rem;

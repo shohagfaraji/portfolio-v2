@@ -8,11 +8,6 @@ const Contact = () => {
         <>
             <div id="Contact" className="footer">
                 <div className="footer-content">
-                    {/* <div className="footer-ribbon">
-            <div className="ribbon-top">Shohag Faraji</div>
-            <div className="ribbon-bottom">Software Engineer</div>
-          </div> */}
-
                     <div className="footer-icons">
                         <p className="footer-find-text">
                             You can find me here ✌
@@ -35,13 +30,6 @@ const Contact = () => {
                             <a href="mailto:shohagfaraji2@gmail.com">
                                 <i className="fa-solid fa-envelope footer-icon"></i>
                             </a>
-                            {/* <a
-                              href=""
-                              target="_blank"
-                              rel="noopener noreferrer"
-                          >
-                              <i className="fas fa-user footer-icon"></i>
-                          </a> */}
                         </div>
                     </div>
                 </div>
