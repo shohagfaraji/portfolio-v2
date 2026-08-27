@@ -3,22 +3,22 @@
     --exp-title-color: var(--primary-color);
 
     --exp-card-bg: var(--surface-color);
-    --exp-shadow: rgba(18, 25, 38, 0.1);
-    --exp-hover-shadow: rgba(18, 25, 38, 0.16);
+    --exp-shadow: rgba(34, 65, 60, 0.08);
+    --exp-hover-shadow: rgba(34, 65, 60, 0.14);
     --exp-hover-bg: var(--surface-solid);
 
-    --exp-dot-bg: #2563eb;
+    --exp-dot-bg: #2f7f77;
     --exp-dot-border: #ffffff;
-    --exp-dot-glow: rgba(37, 99, 235, 0.28);
+    --exp-dot-glow: rgba(47, 127, 119, 0.24);
 
-    --exp-line-gradient: linear-gradient(to right, #2563eb, #0f766e);
-    --exp-line-glow: rgba(37, 99, 235, 0.18);
+    --exp-line-gradient: linear-gradient(to right, #2f7f77, #718096);
+    --exp-line-glow: rgba(47, 127, 119, 0.16);
 
-    --exp-title: #1f2937;
-    --exp-org: #4b5563;
-    --exp-duration: #ca8a04;
-    --exp-details: #374151;
-    --exp-toggle: #2563eb;
+    --exp-title: #1c2524;
+    --exp-org: #566361;
+    --exp-duration: #84640c;
+    --exp-details: #3d4947;
+    --exp-toggle: #2f7f77;
 }
 
 body.dark {

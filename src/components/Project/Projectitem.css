@@ -31,7 +31,7 @@
 }
 
 .image-wrapper.has-video:focus-visible {
-    outline: 3px solid rgba(37, 99, 235, 0.38);
+    outline: 3px solid var(--media-focus-outline);
     outline-offset: -3px;
 }
 
@@ -418,7 +418,7 @@
     height: 0.26rem;
     border-radius: 999px;
     background:
-        linear-gradient(90deg, #0ea5e9, #7c3aed) 0 /
+        linear-gradient(90deg, var(--media-progress-start), var(--media-progress-end)) 0 /
             var(--video-progress-percent) 100% no-repeat,
         var(--video-modal-track);
 }
@@ -432,7 +432,11 @@
 .video-progress::-moz-range-progress {
     height: 0.26rem;
     border-radius: 999px;
-    background: linear-gradient(90deg, #0ea5e9, #7c3aed);
+    background: linear-gradient(
+        90deg,
+        var(--media-progress-start),
+        var(--media-progress-end)
+    );
 }
 
 .video-progress::-webkit-slider-thumb {

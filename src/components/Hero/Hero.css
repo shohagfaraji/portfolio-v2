@@ -1,24 +1,24 @@
 :root {
-    --availability-bg: #0f172a;
+    --availability-bg: #1c2524;
     --availability-border: rgba(255, 255, 255, 0.12);
-    --availability-glow: rgba(16, 185, 129, 0.18);
+    --availability-glow: rgba(47, 127, 119, 0.16);
 
-    --ping-color: #10b981;
-    --ping-pulse: rgba(16, 185, 129, 0.28);
+    --ping-color: #2f7f77;
+    --ping-pulse: rgba(47, 127, 119, 0.24);
 
     --hero-caret-color: var(--accent-color);
 
     --hero-title-gradient-primary: linear-gradient(
         90deg,
-        #172033,
-        #2563eb,
-        #0f766e
+        #151d1c,
+        #2f7f77,
+        #475569
     );
-    --hero-title-gradient-secondary: linear-gradient(90deg, #1d4ed8, #0f766e);
+    --hero-title-gradient-secondary: linear-gradient(90deg, #2f7f77, #64748b);
 
     --hero-button-border-color: var(--border-color);
     --hero-button-text: var(--primary-color);
-    --hero-button-fill: #2563eb;
+    --hero-button-fill: #2f7f77;
     --hero-button-fill-text: #ffffff;
 }
 

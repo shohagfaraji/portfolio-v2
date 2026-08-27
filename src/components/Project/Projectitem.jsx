@@ -765,7 +765,7 @@ const Projectitem = (props) => {
                                     href={sourceCodeLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="btn btn-code shine-button"
+                                    className="btn btn-code"
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                 >
@@ -777,7 +777,7 @@ const Projectitem = (props) => {
                                     href={deployedLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="btn btn-live shine-button"
+                                    className="btn btn-live"
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                 >

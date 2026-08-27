@@ -103,13 +103,13 @@ const HeroSection = () => {
                             href={RESUME_URL}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="join-button shine-button"
+                            className="join-button"
                         >
                             Resume
                         </a>
                         <a
                             href="mailto:shohagfaraji2@gmail.com"
-                            className="contact-link shine-button"
+                            className="contact-link"
                         >
                             Mail Me
                         </a>

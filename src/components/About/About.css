@@ -2,12 +2,16 @@
     --about-heading-color: var(--primary-color);
     --about-paragraph-color: var(--muted-text);
     --about-image-bg: var(--surface-color);
+    --about-border-start: rgba(47, 127, 119, 0.34);
+    --about-border-end: rgba(71, 85, 105, 0.2);
 }
 
 body.dark {
     --about-heading-color: white;
     --about-paragraph-color: #ccc;
     --about-image-bg: var(--surface-color);
+    --about-border-start: rgba(37, 99, 235, 0.34);
+    --about-border-end: rgba(20, 184, 166, 0.2);
 }
 
 .about-section {
@@ -55,8 +59,8 @@ body.dark {
             padding-box,
         linear-gradient(
                 135deg,
-                rgba(37, 99, 235, 0.34),
-                rgba(20, 184, 166, 0.2)
+                var(--about-border-start),
+                var(--about-border-end)
             )
             border-box;
     box-shadow: 0 18px 42px rgba(15, 23, 42, 0.14);

@@ -1,6 +1,6 @@
 :root {
-    --loading-bg-color: #ffffff;
-    --dot-color: #0dcaf0;
+    --loading-bg-color: #f8faf9;
+    --dot-color: #2f7f77;
 }
 
 body.dark {
